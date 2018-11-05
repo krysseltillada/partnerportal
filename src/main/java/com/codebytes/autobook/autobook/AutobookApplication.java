@@ -11,7 +11,7 @@ public class AutobookApplication {
 
 	@GetMapping("/admin")
 	public String home () {
-		return "/admin/index";
+		return "admin/index";
 	}
 
 	public static void main(String[] args) {
