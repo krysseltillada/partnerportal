@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"
       xmlns:th="http://www.thymeleaf.org">
-    <head th:fragment="cssFiles">
+    <th:block th:fragment="cssFiles">
 
         <link rel="apple-touch-icon" th:href="@{/admin/template/stack-template/app-assets/images/ico/apple-icon-120.png}">
 
@@ -24,5 +24,5 @@
 
         <link rel="stylesheet" type="text/css" th:href="@{/admin/template/stack-template/assets/css/style.css}">
 
-    </head>
+    </th:block>
 </html>
