@@ -14,6 +14,9 @@ public class AutobookApplication {
 		return "admin/index";
 	}
 
+	@GetMapping("/forms")
+	public String forms () { return "admin/forms"; }
+
 	public static void main(String[] args) {
 		SpringApplication.run(AutobookApplication.class, args);
 	}
