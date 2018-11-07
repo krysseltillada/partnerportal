@@ -5,8 +5,13 @@
 
 	<groupId>com.codebytes.autobook</groupId>
 	<artifactId>autobook</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<version>0.1</version>
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>admin</module>
+		<module>user</module>
+	</modules>
 
 	<name>autobook</name>
 	<description>peer-to-peer application, using an API to be provided on-site, on which the users can rent a car from private owners registered on the system.</description>
