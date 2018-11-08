@@ -9,13 +9,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class AutobookAdminApplication {
 
-	@GetMapping("/admin")
-	public String home () {
-		return "index";
+	@GetMapping("/admin/dashboard")
+	public String dashboard () {
+		return "dashboard";
 	}
 
-	@GetMapping("/forms")
-	public String forms () { return "forms"; }
+	@GetMapping("/admin")
+	public String login () { return "login"; }
 
 	public static void main(String[] args) {
 		SpringApplication.run(AutobookAdminApplication.class, args);

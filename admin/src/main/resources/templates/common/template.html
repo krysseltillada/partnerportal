@@ -14,7 +14,7 @@
         <meta name="keywords" content="admin template, stack admin template, dashboard template, flat admin template, responsive admin template, web app">
         <meta name="author" content="PIXINVENT">
 
-        <title>Dashboard eCommerce - Stack Responsive Bootstrap 4 Admin Template</title>
+        <title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">PartnerPortal</title>
 
         <th:block th:include="common/css :: cssFiles" />
 
@@ -22,7 +22,7 @@
 
     <body class="vertical-layout vertical-menu-modern 2-columns   menu-expanded fixed-navbar" data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
 
-        <th:block th:include="common/topbar :: topbar"/>
+        <th:block th:include="common/topbar :: topbar" />
 
         <th:block th:include="common/sidebar :: sidebar" />
 

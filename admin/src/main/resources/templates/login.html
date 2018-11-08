@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr"
+	xmlns:th="http://www.thymeleaf.org">
+  
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>Admin Login - PartnerPortal</title>
+    <th:block th:include="common/css :: cssFiles" />
+  </head>
+  <body class="vertical-layout vertical-menu-modern 1-column  bg-full-screen-image menu-expanded blank-page blank-page" data-open="click" data-menu="vertical-menu-modern" data-col="1-column">
+  
+    <div class="app-content content">
+      <div class="content-wrapper">
+        <div class="content-header row">
+        </div>
+        <div class="content-body"><section class="flexbox-container">
+		    <div class="col-12 d-flex align-items-center justify-content-center">
+		        <div class="col-md-4 col-10 box-shadow-2 p-0">
+		            <div class="card border-grey border-lighten-3 px-1 py-1 m-0">
+		                <div class="card-header border-0">
+		                    <div class="card-title text-center">
+		                        <img th:src="@{/template/stack-template/app-assets/images/logo/stack-80x80.png}" alt="branding logo">
+		                    </div>
+		                    <h6 class="card-subtitle line-on-side text-muted text-center font-small-3 pt-2"><span>ADMIN Login</span></h6>
+		                </div>
+		                <div class="card-content">
+		                    <div class="card-body">
+		                        <form class="form-horizontal" action="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/html/ltr/vertical-modern-menu-template/index.html" novalidate>
+		                            <fieldset class="form-group position-relative has-icon-left">
+		                                <input type="text" class="form-control" id="user-name" placeholder="Your Username" required>
+		                                <div class="form-control-position">
+		                                    <i class="ft-user"></i>
+		                                </div>
+		                            </fieldset>
+		                            <fieldset class="form-group position-relative has-icon-left">
+		                                <input type="password" class="form-control" id="user-password" placeholder="Enter Password" required>
+		                                <div class="form-control-position">
+		                                    <i class="fa fa-key"></i>
+		                                </div>
+		                            </fieldset>
+		                            <div class="form-group row">
+		                                <div class="col-md-6 col-12 text-center text-sm-left">
+		                                    <a class="card-link info" data-toggle="modal" data-backdrop="false" data-target="#info">Forgot Password?</a>
+		                                </div>
+		                            </div>
+		                            <button type="submit" class="btn btn-outline-primary btn-block"><i class="ft-unlock"></i> Login</button>
+		                        </form>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</section>
+
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade text-left" id="info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel11" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header bg-info white">
+					<h4 class="modal-title" id="myModalLabel11">Forgot Password?</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<label>Email: </label>
+					<div class="form-group position-relative has-icon-left">
+						<input type="text" placeholder="Email Address" class="form-control">
+							<div class="form-control-position">
+								<i class="fa fa-envelope font-medium-5 line-height-1 text-muted icon-align"></i>
+							</div>
+						</div>
+						<p>Note: Please enter your registered email address. We will send you a link to change your password.</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn grey btn-outline-secondary" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-outline-info">Send</button>
+					</div>
+				</div>
+			</div>
+		</div>
+						
+		<script  th:src="@{/template/stack-template/app-assets/vendors/js/vendors.min.js}" type="text/javascript"></script>
+	    <script th:src="@{/template/stack-template/app-assets/js/scripts/modal/components-modal.min.js}" type="text/javascript"></script>
+	
+  </body>
+
+</html>
