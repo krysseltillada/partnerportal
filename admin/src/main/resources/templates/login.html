@@ -25,15 +25,15 @@
 		                </div>
 		                <div class="card-content">
 		                    <div class="card-body">
-		                        <form class="form-horizontal" action="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/html/ltr/vertical-modern-menu-template/index.html" novalidate>
+		                        <form class="form-horizontal" th:action="@{/admin}" method="post">
 		                            <fieldset class="form-group position-relative has-icon-left">
-		                                <input type="text" class="form-control" id="user-name" placeholder="Your Username" required>
+		                                <input type="text" class="form-control" id="user-name" placeholder="Your Username" name="username" required>
 		                                <div class="form-control-position">
 		                                    <i class="ft-user"></i>
 		                                </div>
 		                            </fieldset>
 		                            <fieldset class="form-group position-relative has-icon-left">
-		                                <input type="password" class="form-control" id="user-password" placeholder="Enter Password" required>
+		                                <input type="password" class="form-control" id="user-password" placeholder="Enter Password" name="password" required>
 		                                <div class="form-control-position">
 		                                    <i class="fa fa-key"></i>
 		                                </div>
@@ -44,6 +44,13 @@
 		                                </div>
 		                            </div>
 		                            <button type="submit" class="btn btn-outline-primary btn-block"><i class="ft-unlock"></i> Login</button>
+		                            
+		                            <div th:if="${param.error != null}" class="text-center">
+								    	<p class="red mt-2">Wrong username or password.</p>
+									</div>
+									<div th:if="${param.logout != null}" class="text-center">
+								    	<p class="success mt-2">You've successfully logged out.</p>
+									</div>
 		                        </form>
 		                    </div>
 		                </div>
