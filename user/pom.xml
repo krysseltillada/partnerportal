@@ -14,6 +14,6 @@
 	<packaging>jar</packaging>
 
 	<name>user</name>
-	<description>admin module for autobook.</description>
+	<description>user module for autobook.</description>
 
 </project>
