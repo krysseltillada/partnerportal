@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+        <head>
+
+            <title layout:title-pattern="$LAYOUT_TITLE - $CONTENT_TITLE">PartnerPortal</title>
+            <meta charset="utf-8">
+            <meta name="description" content="Plus E-Commerce Template">
+            <meta name="author" content="Diamant Gjota" />
+            <meta name="keywords" content="plus, html5, css3, template, ecommerce, e-commerce, bootstrap, responsive, creative" />
+            <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+            <th:block th:include="common/css :: cssFiles"/>
+
+        </head>
+    <body>
+
+    <!--&lt;!&ndash; start section &ndash;&gt;-->
+    <!--<section class="primary-background hidden-xs">-->
+    <!--<div class="container-fluid">-->
+    <!--<div class="row grid-space-0">-->
+    <!--<div class="col-sm-12">-->
+    <!--<figure>-->
+    <!--<a href="category.html">-->
+    <!--<img src="img/banners/top_banner.jpg" alt=""/>-->
+    <!--</a>-->
+    <!--</figure>-->
+    <!--</div>&lt;!&ndash; end col &ndash;&gt;-->
+    <!--</div>&lt;!&ndash; end row &ndash;&gt;-->
+    <!--</div>&lt;!&ndash; end container &ndash;&gt;-->
+    <!--</section>-->
+    <!--&lt;!&ndash; end section &ndash;&gt;-->
+
+    <th:block th:include="common/topbar :: topbar" />
+
+    <th:block layout:fragment="content" />
+
+    <!-- start footer -->
+    <th:block th:include="common/footer :: footer" />
+    <!-- end footer -->
+
+    <th:block th:include="common/js :: javascriptFiles" />
+
+    </body>
+
+</html>
