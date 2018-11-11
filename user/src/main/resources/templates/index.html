@@ -9,1242 +9,487 @@
     </head>
     <body>
         <th:block layout:fragment="content">
-            <!-- start section -->
-            <section class="section light-backgorund">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-4 col-md-3">
-                            <div class="navbar-vertical">
-                                <ul class="nav nav-stacked">
-                                    <li class="header">
-                                        <h6 class="text-uppercase">Categories <i class="fa fa-navicon pull-right"></i></h6>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                            Mens <i class="fa fa-angle-right pull-right"></i>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="javascript:void(0);">Shirts</a></li>
-                                            <li><a href="javascript:void(0);">Coats & Jackets</a></li>
-                                            <li><a href="javascript:void(0);">Underwear</a></li>
-                                            <li><a href="javascript:void(0);">Sunglasses</a></li>
-                                            <li><a href="javascript:void(0);">Socks</a></li>
-                                            <li><a href="javascript:void(0);">Belts</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                            Womens <i class="fa fa-angle-right pull-right"></i>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="javascript:void(0);">Dresses</a></li>
-                                            <li><a href="javascript:void(0);">T-shirts</a></li>
-                                            <li><a href="javascript:void(0);">Skirts</a></li>
-                                            <li><a href="javascript:void(0);">Jeans</a></li>
-                                            <li><a href="javascript:void(0);">Pullover</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="javascript:void(0);">Kids</a></li>
-                                    <li><a href="javascript:void(0);">Fashion</a></li>
-                                    <li>
-                                        <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">
-                                            SportWear <i class="fa fa-angle-right pull-right"></i>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="javascript:void(0);">Shoes</a></li>
-                                            <li><a href="javascript:void(0);">Bags</a></li>
-                                            <li><a href="javascript:void(0);">Pants</a></li>
-                                            <li><a href="javascript:void(0);">Swimwear</a></li>
-                                            <li><a href="javascript:void(0);">Bicycles</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="javascript:void(0);">Bags</a></li>
-                                    <li><a href="javascript:void(0);">Shoes</a></li>
-                                    <li><a href="javascript:void(0);">HouseHolds</a></li>
-                                    <li>
-                                        <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">
-                                            Technology <i class="fa fa-angle-right pull-right"></i>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="javascript:void(0);">Television</a></li>
-                                            <li><a href="javascript:void(0);">Camera</a></li>
-                                            <li><a href="javascript:void(0);">Speakers</a></li>
-                                            <li><a href="javascript:void(0);">Mobile</a></li>
-                                            <li><a href="javascript:void(0);">PC</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div><!-- end navbar-vertical -->
-                        </div><!-- end col -->
-                        <div class="col-sm-8 col-md-9">
-                            <div class="owl-carousel slider owl-theme">
-                                <div class="item">
-                                    <figure>
-                                        <a href="javascript:void(0);">
-                                            <img th:src="@{/template/plus-template/img/slider/slider_10.jpg}" alt=""/>
-                                        </a>
-                                    </figure>
-                                </div><!-- end item -->
-                                <div class="item">
-                                    <figure>
-                                        <a href="javascript:void(0);">
-                                            <img th:src="@{/template/plus-template/img/slider/slider_09.jpg}" alt=""/>
-                                        </a>
-                                    </figure>
-                                </div><!-- end item -->
-                                <div class="item">
-                                    <figure>
-                                        <a href="javascript:void(0);">
-                                            <img th:src="@{/template/plus-template/img/slider/slider_08.jpg}" alt=""/>
-                                        </a>
-                                    </figure>
-                                </div><!-- end item -->
-                            </div><!-- end owl carousel -->
-                        </div><!-- end col -->
-                    </div><!-- end row -->
-                </div><!-- end container -->
-            </section>
-            <!-- end section -->
-
-
-            <!-- start section -->
-            <section class="section white-background">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="title-wrap">
-                                <h2 class="title"><span class="text-primary">Newest</span> Products</h2>
-                            </div>
-                        </div><!-- end col -->
-                    </div><!-- end row -->
-
-                    <div class="row column-4">
-                        <div class="col-sm-6 col-md-3">
-                            <div class="thumbnail store style1">
-                                <div class="header">
-                                    <div class="badges">
-                                        <span class="product-badge top left primary-background text-white semi-circle">Sale</span>
-                                        <span class="product-badge top right text-warning">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star-half-o"></i>
-                                            </span>
-                                    </div>
-                                    <figure class="layer">
-                                        <a href="javascript:void(0);">
-                                            <img class="front" th:src="@{/template/plus-template/img/products/men_01.jpg}" alt="">
-                                            <img class="back" th:src="@{/template/plus-template/img/products/men_02.jpg}" alt="">
-                                        </a>
-                                    </figure>
-                                    <div class="icons">
-                                        <a class="icon semi-circle" href="javascript:void(0);"><i class="fa fa-heart-o"></i></a>
-                                        <a class="icon semi-circle" href="javascript:void(0);"><i class="fa fa-gift"></i></a>
-                                        <a class="icon semi-circle" href="javascript:void(0);" data-toggle="modal" data-target=".productQuickView"><i class="fa fa-search"></i></a>
-                                    </div>
-                                </div>
-                                <div class="caption">
-                                    <h6 class="regular"><a href="shop-single-product-v1.html">Lorem Ipsum dolor sit</a></h6>
-                                    <div class="price">
-                                        <small class="amount off">$68.99</small>
-                                        <span class="amount text-primary">$59.99</span>
-                                    </div>
-                                    <a href="javascript:void(0);"><i class="fa fa-cart-plus mr-5"></i>Add to cart</a>
-                                </div><!-- end caption -->
-                            </div><!-- end thumbnail -->
-                        </div><!-- end col -->
-
-                        <div class="col-sm-6 col-md-3">
-                            <div class="thumbnail store style1">
-                                <div class="header">
-                                    <div class="badges">
-                                        <span class="product-badge top right danger-background text-white semi-circle">-20%</span>
-                                    </div>
-                                    <figure class="layer">
-                                        <a href="javascript:void(0);">
-                                            <img th:src="@{/template/plus-template/img/products/women_01.jpg}" alt="">
-                                        </a>
-                                    </figure>
-                                    <div class="icons">
-                                        <a class="icon semi-circle" href="javascript:void(0);"><i class="fa fa-heart-o"></i></a>
-                                        <a class="icon semi-circle" href="javascript:void(0);"><i class="fa fa-gift"></i></a>
-                                        <a class="icon semi-circle" href="javascript:void(0);" data-toggle="modal" data-target=".productQuickView"><i class="fa fa-search"></i></a>
-                                    </div>
-                                </div>
-                                <div class="caption">
-                                    <h6 class="regular"><a href="shop-single-product-v1.html">Lorem Ipsum dolor sit</a></h6>
-                                    <div class="price">
-                                        <small class="amount off">$68.99</small>
-                                        <span class="amount text-primary">$59.99</span>
-                                    </div>
-                                    <a href="javascript:void(0);"><i class="fa fa-cart-plus mr-5"></i>Add to cart</a>
-                                </div><!-- end caption -->
-                            </div><!-- end thumbnail -->
-                        </div><!-- end col -->
-
-                        <div class="col-sm-6 col-md-3">
-                            <div class="thumbnail store style1">
-                                <div class="header">
-                                    <div class="badges">
-                                        <span class="product-badge bottom left warning-background text-white semi-circle">Out of Stock</span>
-                                    </div>
-                                    <figure class="layer">
-                                        <a href="javascript:void(0);">
-                                            <img th:src="@{/template/plus-template/img/products/bags_01.jpg}" alt="">
-                                        </a>
-                                    </figure>
-                                </div>
-                                <div class="caption">
-                                    <h6 class="regular"><a href="shop-single-product-v1.html">Lorem Ipsum dolor sit</a></h6>
-                                    <div class="price">
-                                        <small class="amount off">$68.99</small>
-                                        <span class="amount text-primary">$59.99</span>
-                                    </div>
-                                    <a href="javascript:void(0);"><i class="fa fa-cart-plus mr-5"></i>Add to cart</a>
-                                </div><!-- end caption -->
-                            </div><!-- end thumbnail -->
-                        </div><!-- end col -->
-
-                        <div class="col-sm-6 col-md-3">
-                            <div class="thumbnail store style1">
-                                <div class="header">
-                                    <div class="badges">
-                                        <span class="product-badge bottom right info-background text-white semi-circle">New</span>
-                                    </div>
-                                    <figure class="layer">
-                                        <a href="javascript:void(0);">
-                                            <img th:src="@{/template/plus-template/img/products/fashion_01.jpg}" alt="">
-                                        </a>
-                                    </figure>
-                                    <div class="icons">
-                                        <a class="icon semi-circle" href="javascript:void(0);"><i class="fa fa-heart-o"></i></a>
-                                        <a class="icon semi-circle" href="javascript:void(0);"><i class="fa fa-gift"></i></a>
-                                        <a class="icon semi-circle" href="javascript:void(0);" data-toggle="modal" data-target=".productQuickView"><i class="fa fa-search"></i></a>
-                                    </div>
-                                </div>
-                                <div class="caption">
-                                    <h6 class="regular"><a href="shop-single-product-v1.html">Lorem Ipsum dolor sit</a></h6>
-                                    <div class="price">
-                                        <small class="amount off">$68.99</small>
-                                        <span class="amount text-primary">$59.99</span>
-                                    </div>
-                                    <a href="javascript:void(0);"><i class="fa fa-cart-plus mr-5"></i>Add to cart</a>
-                                </div><!-- end caption -->
-                            </div><!-- end thumbnail -->
-                        </div><!-- end col -->
-
-                        <div class="col-sm-6 col-md-3">
-                            <div class="thumbnail store style1">
-                                <div class="header">
-                                    <figure class="layer">
-                                        <a href="javascript:void(0);">
-                                            <img th:src="@{/template/plus-template/img/products/hoseholds_05.jpg}" alt="">
-                                        </a>
-                                    </figure>
-                                    <div class="icons">
-                                        <a class="icon semi-circle" href="javascript:void(0);"><i class="fa fa-heart-o"></i></a>
-                                        <a class="icon semi-circle" href="javascript:void(0);"><i class="fa fa-gift"></i></a>
-                                        <a class="icon semi-circle" href="javascript:void(0);" data-toggle="modal" data-target=".productQuickView"><i class="fa fa-search"></i></a>
-                                    </div>
-                                    <ul class="countdown-product">
-                                        <li>
-                                            <span class="days">00</span>
-                                            <p>Days</p>
-                                        </li>
-                                        <li>
-                                            <span class="hours">00</span>
-                                            <p>Hours</p>
-                                        </li>
-                                        <li>
-                                            <span class="minutes">00</span>
-                                            <p>Mins</p>
-                                        </li>
-                                        <li>
-                                            <span class="seconds">00</span>
-                                            <p>Secs</p>
-                                        </li>
-                                    </ul><!-- end countdown -->
-                                </div>
-                                <div class="caption">
-                                    <h6 class="regular"><a href="shop-single-product-v1.html">Lorem Ipsum dolor sit</a></h6>
-                                    <div class="price">
-                                        <small class="amount off">$68.99</small>
-                                        <span class="amount text-primary">$59.99</span>
-                                    </div>
-                                    <a href="javascript:void(0);"><i class="fa fa-cart-plus mr-5"></i>Add to cart</a>
-                                </div><!-- end caption -->
-                            </div><!-- end thumbnail -->
-                        </div><!-- end col -->
-
-                        <div class="col-sm-6 col-md-3">
-                            <div class="thumbnail store style1">
-                                <div class="header">
-                                    <figure class="layer">
-                                        <a href="javascript:void(0);">
-                                            <img th:src="@{/template/plus-template/img/products/kids_01.jpg}" alt="">
-                                        </a>
-                                    </figure>
-                                    <div class="icons">
-                                        <a class="icon semi-circle" href="javascript:void(0);"><i class="fa fa-heart-o"></i></a>
-                                        <a class="icon semi-circle" href="javascript:void(0);"><i class="fa fa-gift"></i></a>
-                                        <a class="icon semi-circle" href="javascript:void(0);" data-toggle="modal" data-target=".productQuickView"><i class="fa fa-search"></i></a>
-                                    </div>
-                                </div>
-                                <div class="caption">
-                                    <h6 class="regular"><a href="shop-single-product-v1.html">Lorem Ipsum dolor sit</a></h6>
-                                    <div class="price">
-                                        <small class="amount off">$68.99</small>
-                                        <span class="amount text-primary">$59.99</span>
-                                    </div>
-                                    <a href="javascript:void(0);"><i class="fa fa-cart-plus mr-5"></i>Add to cart</a>
-                                </div><!-- end caption -->
-                            </div><!-- end thumbnail -->
-                        </div><!-- end col -->
-
-                        <div class="col-sm-6 col-md-3">
-                            <div class="thumbnail store style1">
-                                <div class="header">
-                                    <figure class="layer">
-                                        <a href="javascript:void(0);">
-                                            <img th:src="@{/template/plus-template/img/products/shoes_01.jpg}" alt="">
-                                        </a>
-                                    </figure>
-                                    <div class="icons">
-                                        <a class="icon semi-circle" href="javascript:void(0);"><i class="fa fa-heart-o"></i></a>
-                                        <a class="icon semi-circle" href="javascript:void(0);"><i class="fa fa-gift"></i></a>
-                                        <a class="icon semi-circle" href="javascript:void(0);" data-toggle="modal" data-target=".productQuickView"><i class="fa fa-search"></i></a>
-                                    </div>
-                                </div>
-                                <div class="caption">
-                                    <h6 class="regular"><a href="shop-single-product-v1.html">Lorem Ipsum dolor sit</a></h6>
-                                    <div class="price">
-                                        <small class="amount off">$68.99</small>
-                                        <span class="amount text-primary">$59.99</span>
-                                    </div>
-                                    <a href="javascript:void(0);"><i class="fa fa-cart-plus mr-5"></i>Add to cart</a>
-                                </div><!-- end caption -->
-                            </div><!-- end thumbnail -->
-                        </div><!-- end col -->
-
-                        <div class="col-sm-6 col-md-3">
-                            <div class="thumbnail store style1">
-                                <div class="header">
-                                    <figure class="layer">
-                                        <a href="javascript:void(0);">
-                                            <img th:src="@{/template/plus-template/img/products/technology_02.jpg}" alt="">
-                                        </a>
-                                    </figure>
-                                    <div class="icons">
-                                        <a class="icon semi-circle" href="javascript:void(0);"><i class="fa fa-heart-o"></i></a>
-                                        <a class="icon semi-circle" href="javascript:void(0);"><i class="fa fa-gift"></i></a>
-                                        <a class="icon semi-circle" href="javascript:void(0);" data-toggle="modal" data-target=".productQuickView"><i class="fa fa-search"></i></a>
-                                    </div>
-                                </div>
-                                <div class="caption">
-                                    <h6 class="regular"><a href="shop-single-product-v1.html">Lorem Ipsum dolor sit</a></h6>
-                                    <div class="price">
-                                        <small class="amount off">$68.99</small>
-                                        <span class="amount text-primary">$59.99</span>
-                                    </div>
-                                    <a href="javascript:void(0);"><i class="fa fa-cart-plus mr-5"></i>Add to cart</a>
-                                </div><!-- end caption -->
-                            </div><!-- end thumbnail -->
-                        </div><!-- end col -->
-                    </div><!-- end row -->
-
-                    <hr class="spacer-30 no-border"/>
-
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="box-banner-img">
-                                <figure>
-                                    <a href="javascript:void(0);">
-                                        <img th:src="@{/template/plus-template/img/banners/banner_04.jpg}" alt=""/>
-                                    </a>
-                                </figure>
-                            </div><!-- end box-banner-img -->
-                        </div><!-- end col -->
-                        <div class="col-sm-6">
-                            <div class="box-banner-img">
-                                <figure>
-                                    <a href="javascript:void(0);">
-                                        <img th:src="@{/template/plus-template/img/banners/banner_05.jpg}" alt=""/>
-                                    </a>
-                                </figure>
-                            </div><!-- end box-banner-img -->
-                        </div><!-- end col -->
-                    </div><!-- end row -->
-
-                    <hr class="spacer-30 no-border"/>
-
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="title-wrap">
-                                <h2 class="title"><span class="text-primary">Popular</span> Products</h2>
-                            </div>
-                        </div><!-- end col -->
-                    </div><!-- end row -->
-
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="owl-carousel column-4 owl-theme">
-                                <div class="item">
-                                    <div class="thumbnail store style1">
-                                        <div class="header">
-                                            <figure class="layer">
-                                                <a href="javascript:void(0);">
-                                                    <img th:src="@{/template/plus-template/img/products/men_01.jpg}" alt="">
-                                                </a>
-                                            </figure>
-                                            <div class="icons">
-                                                <a class="icon semi-circle" href="javascript:void(0);"><i class="fa fa-heart-o"></i></a>
-                                                <a class="icon semi-circle" href="javascript:void(0);"><i class="fa fa-gift"></i></a>
-                                                <a class="icon semi-circle" href="javascript:void(0);" data-toggle="modal" data-target=".productQuickView"><i class="fa fa-search"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="caption">
-                                            <h6 class="regular"><a href="shop-single-product-v1.html">Lorem Ipsum dolor sit</a></h6>
-                                            <div class="price">
-                                                <small class="amount off">$68.99</small>
-                                                <span class="amount text-primary">$59.99</span>
-                                            </div>
-                                            <a href="javascript:void(0);"><i class="fa fa-cart-plus mr-5"></i>Add to cart</a>
-                                        </div><!-- end caption -->
-                                    </div><!-- end thumbnail -->
-                                </div><!-- end item -->
-                                <div class="item">
-                                    <div class="thumbnail store style1">
-                                        <div class="header">
-                                            <figure class="layer">
-                                                <a href="javascript:void(0);">
-                                                    <img th:src="@{/template/plus-template/img/products/technology_02.jpg}" alt="">
-                                                </a>
-                                            </figure>
-                                            <div class="icons">
-                                                <a class="icon semi-circle" href="javascript:void(0);"><i class="fa fa-heart-o"></i></a>
-                                                <a class="icon semi-circle" href="javascript:void(0);"><i class="fa fa-gift"></i></a>
-                                                <a class="icon semi-circle" href="javascript:void(0);" data-toggle="modal" data-target=".productQuickView"><i class="fa fa-search"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="caption">
-                                            <h6 class="regular"><a href="shop-single-product-v1.html">Lorem Ipsum dolor sit</a></h6>
-                                            <div class="price">
-                                                <small class="amount off">$68.99</small>
-                                                <span class="amount text-primary">$59.99</span>
-                                            </div>
-                                            <a href="javascript:void(0);"><i class="fa fa-cart-plus mr-5"></i>Add to cart</a>
-                                        </div><!-- end caption -->
-                                    </div><!-- end thumbnail -->
-                                </div><!-- end item -->
-                                <div class="item">
-                                    <div class="thumbnail store style1">
-                                        <div class="header">
-                                            <div class="badges">
-                                                <span class="product-badge top left primary-background text-white semi-circle">Sale</span>
-                                                <span class="product-badge top right text-warning">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-half-o"></i>
-                                                    </span>
-                                            </div>
-                                            <figure class="layer">
-                                                <a href="javascript:void(0);">
-                                                    <img class="front" th:src="@{/template/plus-template/img/products/men_03.jpg}" alt="">
-                                                    <img class="back" th:src="@{/template/plus-template/img/products/men_04.jpg}" alt="">
-                                                </a>
-                                            </figure>
-                                            <div class="icons">
-                                                <a class="icon semi-circle" href="javascript:void(0);"><i class="fa fa-heart-o"></i></a>
-                                                <a class="icon semi-circle" href="javascript:void(0);"><i class="fa fa-gift"></i></a>
-                                                <a class="icon semi-circle" href="javascript:void(0);" data-toggle="modal" data-target=".productQuickView"><i class="fa fa-search"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="caption">
-                                            <h6 class="regular"><a href="shop-single-product-v1.html">Lorem Ipsum dolor sit</a></h6>
-                                            <div class="price">
-                                                <small class="amount off">$68.99</small>
-                                                <span class="amount text-primary">$59.99</span>
-                                            </div>
-                                            <a href="javascript:void(0);"><i class="fa fa-cart-plus mr-5"></i>Add to cart</a>
-                                        </div><!-- end caption -->
-                                    </div><!-- end thumbnail -->
-                                </div><!-- end item -->
-                                <div class="item">
-                                    <div class="thumbnail store style1">
-                                        <div class="header">
-                                            <figure class="layer">
-                                                <a href="javascript:void(0);">
-                                                    <img th:src="@{/template/plus-template/img/products/shoes_01.jpg}" alt="">
-                                                </a>
-                                            </figure>
-                                            <div class="icons">
-                                                <a class="icon semi-circle" href="javascript:void(0);"><i class="fa fa-heart-o"></i></a>
-                                                <a class="icon semi-circle" href="javascript:void(0);"><i class="fa fa-gift"></i></a>
-                                                <a class="icon semi-circle" href="javascript:void(0);" data-toggle="modal" data-target=".productQuickView"><i class="fa fa-search"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="caption">
-                                            <h6 class="regular"><a href="shop-single-product-v1.html">Lorem Ipsum dolor sit</a></h6>
-                                            <div class="price">
-                                                <small class="amount off">$68.99</small>
-                                                <span class="amount text-primary">$59.99</span>
-                                            </div>
-                                            <a href="javascript:void(0);"><i class="fa fa-cart-plus mr-5"></i>Add to cart</a>
-                                        </div><!-- end caption -->
-                                    </div><!-- end thumbnail -->
-                                </div><!-- end item -->
-                                <div class="item">
-                                    <div class="thumbnail store style1">
-                                        <div class="header">
-                                            <div class="badges">
-                                                <span class="product-badge top right danger-background text-white semi-circle">-20%</span>
-                                            </div>
-                                            <figure class="layer">
-                                                <a href="javascript:void(0);">
-                                                    <img th:src="@{/template/plus-template/img/products/women_03.jpg}" alt="">
-                                                </a>
-                                            </figure>
-                                            <div class="icons">
-                                                <a class="icon semi-circle" href="javascript:void(0);"><i class="fa fa-heart-o"></i></a>
-                                                <a class="icon semi-circle" href="javascript:void(0);"><i class="fa fa-gift"></i></a>
-                                                <a class="icon semi-circle" href="javascript:void(0);" data-toggle="modal" data-target=".productQuickView"><i class="fa fa-search"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="caption">
-                                            <h6 class="regular"><a href="shop-single-product-v1.html">Lorem Ipsum dolor sit</a></h6>
-                                            <div class="price">
-                                                <small class="amount off">$68.99</small>
-                                                <span class="amount text-primary">$59.99</span>
-                                            </div>
-                                            <a href="javascript:void(0);"><i class="fa fa-cart-plus mr-5"></i>Add to cart</a>
-                                        </div><!-- end caption -->
-                                    </div><!-- end thumbnail -->
-                                </div><!-- end item -->
-                            </div><!-- end owl carousel -->
-                        </div><!-- end col -->
-                    </div><!-- end row -->
-                </div><!-- end container -->
-            </section>
-            <!-- end section -->
-
-
-            <!-- start section -->
-            <section class="section light-backgorund">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-10 col-sm-offset-1">
-                            <div class="owl-carousel product-showcase owl-theme">
-                                <div class="product">
-                                    <div class="row">
-                                        <div class="col-sm-4 vertical-align">
-                                            <figure>
-                                                <a href="shop-single-product-v1.html">
-                                                    <img alt="img" th:src="@{/template/plus-template/img/products/men_03.jpg}">
-                                                </a>
-                                            </figure>
-                                        </div><!-- end col -->
-                                        <div class="col-sm-8 vertical-align">
-                                            <h4><a href="shop-single-product-v1.html">Lorem ipsum dolor sit amet</a></h4>
-                                            <ul class="list list-inline">
-                                                <li><del class="text-danger">$99.99</del></li>
-                                                <li><h5 class="text-primary">$49.99</h5></li>
-                                                <li>
-                                                    <i class="fa fa-star text-warning"></i>
-                                                    <i class="fa fa-star text-warning"></i>
-                                                    <i class="fa fa-star text-warning"></i>
-                                                    <i class="fa fa-star text-warning"></i>
-                                                    <i class="fa fa-star-half-o text-warning"></i>
-                                                </li>
-                                            </ul>
-                                            <ul class="countdown list-inline">
-                                                <li class="round">
-                                                    <span class="days">00</span>
-                                                    <p>Days</p>
-                                                </li>
-                                                <li class="round">
-                                                    <span class="hours">00</span>
-                                                    <p>Hours</p>
-                                                </li>
-                                                <li class="round">
-                                                    <span class="minutes">00</span>
-                                                    <p>Mins</p>
-                                                </li>
-                                                <li class="round">
-                                                    <span class="seconds">00</span>
-                                                    <p>Secs</p>
-                                                </li>
-                                            </ul><!-- end countdown -->
-
-                                            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
-                                                consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan
-                                                et iusto odio dignissim qui blandit praesent luptatum </p>
-
-                                            <a title="Add to Cart" class="btn btn-default btn-sm semi-circle">
-                                                <i class="fa fa-shopping-cart mr-5"></i> Add to Cart
-                                            </a>
-                                        </div><!-- end col -->
-                                    </div><!-- end row -->
-                                </div><!-- end product -->
-                                <div class="product">
-                                    <div class="row">
-                                        <div class="col-sm-4 vertical-align">
-                                            <figure>
-                                                <a href="shop-single-product-v1.html">
-                                                    <img alt="img" th:src="@{/template/plus-template/img/products/men_06.jpg}">
-                                                </a>
-                                            </figure>
-                                        </div><!-- end col -->
-                                        <div class="col-sm-8 vertical-align">
-                                            <h4><a href="shop-single-product-v1.html">Lorem ipsum dolor sit amet</a></h4>
-                                            <ul class="list list-inline">
-                                                <li><del class="text-danger">$99.99</del></li>
-                                                <li><h5 class="text-primary">$49.99</h5></li>
-                                                <li>
-                                                    <i class="fa fa-star text-warning"></i>
-                                                    <i class="fa fa-star text-warning"></i>
-                                                    <i class="fa fa-star text-warning"></i>
-                                                    <i class="fa fa-star text-warning"></i>
-                                                    <i class="fa fa-star-half-o text-warning"></i>
-                                                </li>
-                                            </ul>
-
-                                            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
-                                                consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan
-                                                et iusto odio dignissim qui blandit praesent luptatum </p>
-
-                                            <a title="Add to Cart" class="btn btn-default btn-sm semi-circle">
-                                                <i class="fa fa-shopping-cart mr-5"></i> Add to Cart
-                                            </a>
-                                        </div><!-- end col -->
-                                    </div><!-- end row -->
-                                </div><!-- end product -->
-                            </div><!-- end owl carousel -->
-                        </div><!-- end col -->
-                    </div><!-- end row -->
-                </div><!-- end container -->
-            </section>
-            <!-- end section -->
-
-
-            <!-- start section -->
-            <section class="section image-background layer-dark" style="background-image: url(/template/plus-template/img/slider/slider_03.jpg);">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="title-wrap">
-                                <h2 class="title text-white">Our Categories</h2>
-                                <p class="text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-                            </div>
-                        </div><!-- end col -->
-                    </div><!-- end row -->
-
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="owl-carousel column-5 owl-theme">
-                                <div class="cat-item">
-                                    <div class="cat-img">
-                                        <figure>
-                                            <a href="javascript:void(0);">
-                                                <img th:src="@{/template/plus-template/img/products/men_03.jpg}" />
-                                            </a>
-                                        </figure>
-                                    </div><!-- end cat-img -->
-                                    <div class="cat-title">
-                                        <h6><a href="javascript:void(0)">Mens</a></h6>
-                                    </div><!-- end cat-title -->
-                                </div><!-- end cat-item -->
-                                <div class="cat-item">
-                                    <div class="cat-img">
-                                        <figure>
-                                            <a href="javascript:void(0);">
-                                                <img th:src="@{/template/plus-template/img/products/women_02.jpg}" />
-                                            </a>
-                                        </figure>
-                                    </div><!-- end cat-img -->
-                                    <div class="cat-title">
-                                        <h6><a href="javascript:void(0)">Womens</a></h6>
-                                    </div><!-- end cat-title -->
-                                </div><!-- end cat-item -->
-                                <div class="cat-item">
-                                    <div class="cat-img">
-                                        <figure>
-                                            <a href="javascript:void(0);">
-                                                <img th:src="@{/template/plus-template/img/products/kids_01.jpg}" />
-                                            </a>
-                                        </figure>
-                                    </div><!-- end cat-img -->
-                                    <div class="cat-title">
-                                        <h6><a href="javascript:void(0)">Kids</a></h6>
-                                    </div><!-- end cat-title -->
-                                </div><!-- end cat-item -->
-                                <div class="cat-item">
-                                    <div class="cat-img">
-                                        <figure>
-                                            <a href="javascript:void(0);">
-                                                <img th:src="@{/template/plus-template/img/products/bags_04.jpg}" />
-                                            </a>
-                                        </figure>
-                                    </div><!-- end cat-img -->
-                                    <div class="cat-title">
-                                        <h6><a href="javascript:void(0)">Bags</a></h6>
-                                    </div><!-- end cat-title -->
-                                </div><!-- end cat-item -->
-                                <div class="cat-item">
-                                    <div class="cat-img">
-                                        <figure>
-                                            <a href="javascript:void(0);">
-                                                <img th:src="@{/template/plus-template/img/products/technology_09.jpg}" />
-                                            </a>
-                                        </figure>
-                                    </div><!-- end cat-img -->
-                                    <div class="cat-title">
-                                        <h6><a href="javascript:void(0)">Technology</a></h6>
-                                    </div><!-- end cat-title -->
-                                </div><!-- end cat-item -->
-                                <div class="cat-item">
-                                    <div class="cat-img">
-                                        <figure>
-                                            <a href="javascript:void(0);">
-                                                <img th:src="@{/template/plus-template/img/products/fashion_01.jpg}" />
-                                            </a>
-                                        </figure>
-                                    </div><!-- end cat-img -->
-                                    <div class="cat-title">
-                                        <h6><a href="javascript:void(0)">Fashion</a></h6>
-                                    </div><!-- end cat-title -->
-                                </div><!-- end cat-item -->
-                            </div><!-- end owl carousel -->
-                        </div><!-- end col -->
-                    </div><!-- end row -->
-                </div><!-- end container -->
-            </section>
-            <!-- end section -->
-
-
-            <!-- start section -->
-            <section class="section white-backgorund">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="title-wrap">
-                                <h2 class="title"><span class="text-primary">Latest</span> News</h2>
-                            </div>
-                        </div><!-- end col -->
-                    </div><!-- end row -->
-
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div id="owl-demo" class="owl-carousel column-3 owl-theme">
-                                <div class="item">
-                                    <div class="thumbnail blog">
-                                        <div class="header">
-                                            <figure>
-                                                <img th:src="@{/template/plus-template/img/blog/blog_01.jpg}" alt="">
-                                            </figure>
-                                            <div class="meta">
-                                                <span><i class="fa fa-calendar mr-5"></i>Oct 25, 2016</span>
-                                                <span><i class="fa fa-comment mr-5"></i>(15)</span>
-                                                <span><i class="fa fa-heart mr-5"></i>(35)</span>
-                                            </div>
-                                        </div>
-                                        <div class="caption">
-                                            <h6><a href="blog-article-v1.html">Care & Clean Instructions</a></h6>
-                                            <div class="author-category">
-                                                    <span class="author mr-20">
-                                                        <i class="fa fa-user mr-5"></i><a href="javascript:void(0);">Joe Doe</a>
-                                                    </span>
-                                                <span class="category">
-                                                        <a href="javascript:void(0);">Post Formats</a>
-                                                    </span>
-                                            </div>
-                                            <p>Aenean semper lacus sed molestie sollicitudin. In semper, tellus id posuere interdum, est justo faucibus quam, sed eleifend arcu nulla id eros.</p>
-                                            <a href="blog-article-v1.html" class="btn btn-default semi-circle btn-sm">Read more</a>
-                                        </div><!-- end caption -->
-                                    </div><!-- end thumbnail -->
-                                </div><!-- end item -->
-                                <div class="item">
-                                    <div class="thumbnail blog">
-                                        <div class="header">
-                                            <figure>
-                                                <img th:src="@{/template/plus-template/img/blog/blog_02.jpg}" alt="">
-                                            </figure>
-                                            <div class="meta">
-                                                <span><i class="fa fa-calendar mr-5"></i>Oct 25, 2016</span>
-                                                <span><i class="fa fa-comment mr-5"></i>(15)</span>
-                                                <span><i class="fa fa-heart mr-5"></i>(35)</span>
-                                            </div>
-                                        </div>
-                                        <div class="caption">
-                                            <h6><a href="blog-article-v1.html">Design for Work Place</a></h6>
-                                            <div class="author-category">
-                                                    <span class="author mr-20">
-                                                        <i class="fa fa-user mr-5"></i><a href="javascript:void(0);">Joe Doe</a>
-                                                    </span>
-                                                <span class="category">
-                                                        <a href="javascript:void(0);">Post Formats</a>
-                                                    </span>
-                                            </div>
-                                            <p>Aenean semper lacus sed molestie sollicitudin. In semper, tellus id posuere interdum, est justo faucibus quam, sed eleifend arcu nulla id eros.</p>
-                                            <a href="blog-article-v1.html" class="btn btn-default semi-circle btn-sm">Read more</a>
-                                        </div><!-- end caption -->
-                                    </div><!-- end thumbnail -->
-                                </div><!-- end item -->
-                                <div class="item">
-                                    <div class="thumbnail blog">
-                                        <div class="header">
-                                            <figure>
-                                                <img th:src="@{/template/plus-template/img/blog/blog_03.jpg}" alt="">
-                                            </figure>
-                                            <div class="meta">
-                                                <span><i class="fa fa-calendar mr-5"></i>Oct 25, 2016</span>
-                                                <span><i class="fa fa-comment mr-5"></i>(15)</span>
-                                                <span><i class="fa fa-heart mr-5"></i>(35)</span>
-                                            </div>
-                                        </div>
-                                        <div class="caption">
-                                            <h6><a href="blog-article-v1.html">Style your Bedroom</a></h6>
-                                            <div class="author-category">
-                                                    <span class="author mr-20">
-                                                        <i class="fa fa-user mr-5"></i><a href="javascript:void(0);">Joe Doe</a>
-                                                    </span>
-                                                <span class="category">
-                                                        <a href="javascript:void(0);">Post Formats</a>
-                                                    </span>
-                                            </div>
-                                            <p>Aenean semper lacus sed molestie sollicitudin. In semper, tellus id posuere interdum, est justo faucibus quam, sed eleifend arcu nulla id eros.</p>
-                                            <a href="blog-article-v1.html" class="btn btn-default semi-circle btn-sm">Read more</a>
-                                        </div><!-- end caption -->
-                                    </div><!-- end thumbnail -->
-                                </div><!-- end item -->
-                                <div class="item">
-                                    <div class="thumbnail blog">
-                                        <div class="header">
-                                            <figure>
-                                                <img th:src="@{/template/plus-template/img/blog/blog_04.jpg}" alt="">
-                                            </figure>
-                                            <div class="meta">
-                                                <span><i class="fa fa-calendar mr-5"></i>Oct 25, 2016</span>
-                                                <span><i class="fa fa-comment mr-5"></i>(15)</span>
-                                                <span><i class="fa fa-heart mr-5"></i>(35)</span>
-                                            </div>
-                                        </div>
-                                        <div class="caption">
-                                            <h6><a href="blog-article-v1.html">Decorating Tips</a></h6>
-                                            <div class="author-category">
-                                                    <span class="author mr-20">
-                                                        <i class="fa fa-user mr-5"></i><a href="javascript:void(0);">Joe Doe</a>
-                                                    </span>
-                                                <span class="category">
-                                                        <a href="javascript:void(0);">Post Formats</a>
-                                                    </span>
-                                            </div>
-                                            <p>Aenean semper lacus sed molestie sollicitudin. In semper, tellus id posuere interdum.</p>
-                                            <a href="blog-article-v1.html" class="btn btn-default semi-circle btn-sm">Read more</a>
-                                        </div><!-- end caption -->
-                                    </div><!-- end thumbnail -->
-                                </div><!-- end item -->
-                            </div><!-- end owl carousel -->
-                        </div><!-- end col -->
-                    </div><!-- end row -->
-
-                    <hr class="spacer-30 no-border"/>
-
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="widget">
-                                <h5 class="subtitle text-uppercase"><span class="text-primary">New</span> Products</h5>
-
-                                <ul class="items">
-                                    <li>
-                                        <a href="shop-single-product-v1.html" class="product-image">
-                                            <img th:src="@{/template/plus-template/img/products/men_01.jpg}" alt="Sample Product ">
-                                        </a>
-                                        <div class="product-details">
-                                            <h6 class="regular">
-                                                <a href="shop-single-product-v1.html">Printed Summer Dress</a>
-                                            </h6>
-                                            <span class="price text-primary">$19.99</span>
-                                            <div class="rate text-warning">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </li><!-- end item -->
-                                    <li>
-                                        <a href="shop-single-product-v1.html" class="product-image">
-                                            <img th:src="@{/template/plus-template/img/products/women_02.jpg}" alt="Sample Product ">
-                                        </a>
-                                        <div class="product-details">
-                                            <h6 class="regular">
-                                                <a href="shop-single-product-v1.html">Printed Summer Dress</a>
-                                            </h6>
-                                            <span class="price text-primary">$29.99</span>
-                                            <div class="rate text-warning">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </li><!-- end item -->
-                                    <li>
-                                        <a href="shop-single-product-v1.html" class="product-image">
-                                            <img th:src="@{/template/plus-template/img/products/bags_06.jpg}" alt="Sample Product ">
-                                        </a>
-                                        <div class="product-details">
-                                            <h6 class="regular">
-                                                <a href="shop-single-product-v1.html">Printed Summer Dress</a>
-                                            </h6>
-                                            <span class="price text-primary">$15.99</span>
-                                            <div class="rate text-warning">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </li><!-- end item -->
-                                    <li>
-                                        <a href="shop-single-product-v1.html" class="product-image">
-                                            <img th:src="@{/template/plus-template/img/products/bags_01.jpg}" alt="Sample Product ">
-                                        </a>
-                                        <div class="product-details">
-                                            <h6 class="regular">
-                                                <a href="shop-single-product-v1.html">Printed Summer Dress</a>
-                                            </h6>
-                                            <span class="price text-primary">$45.99</span>
-                                            <div class="rate text-warning">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </li><!-- end item -->
-                                </ul>
-                            </div><!-- end widget -->
-                        </div><!-- end col -->
-
-                        <div class="col-sm-4">
-                            <div class="widget">
-                                <h5 class="subtitle text-uppercase"><span class="text-primary">On Sale</span> Products</h5>
-
-                                <ul class="items">
-                                    <li>
-                                        <a href="shop-single-product-v1.html" class="product-image">
-                                            <img th:src="@{/template/plus-template/img/products/men_02.jpg}" alt="Sample Product ">
-                                        </a>
-                                        <div class="product-details">
-                                            <h6 class="regular">
-                                                <a href="shop-single-product-v1.html">Printed Summer Dress</a>
-                                            </h6>
-                                            <span class="price text-primary">$19.99</span>
-                                            <div class="rate text-warning">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </li><!-- end item -->
-                                    <li>
-                                        <a href="shop-single-product-v1.html" class="product-image">
-                                            <img th:src="@{/template/plus-template/img/products/women_01.jpg}" alt="Sample Product ">
-                                        </a>
-                                        <div class="product-details">
-                                            <h6 class="regular">
-                                                <a href="shop-single-product-v1.html">Printed Summer Dress</a>
-                                            </h6>
-                                            <span class="price text-primary">$29.99</span>
-                                            <div class="rate text-warning">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </li><!-- end item -->
-                                    <li>
-                                        <a href="shop-single-product-v1.html" class="product-image">
-                                            <img th:src="@{/template/plus-template/img/products/women_04.jpg}" alt="Sample Product ">
-                                        </a>
-                                        <div class="product-details">
-                                            <h6 class="regular">
-                                                <a href="shop-single-product-v1.html">Printed Summer Dress</a>
-                                            </h6>
-                                            <span class="price text-primary">$15.99</span>
-                                            <div class="rate text-warning">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </li><!-- end item -->
-                                    <li>
-                                        <a href="shop-single-product-v1.html" class="product-image">
-                                            <img th:src="@{/template/plus-template/img/products/bags_05.jpg}" alt="Sample Product ">
-                                        </a>
-                                        <div class="product-details">
-                                            <h6 class="regular">
-                                                <a href="shop-single-product-v1.html">Printed Summer Dress</a>
-                                            </h6>
-                                            <span class="price text-primary">$45.99</span>
-                                            <div class="rate text-warning">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </li><!-- end item -->
-                                </ul>
-                            </div><!-- end widget -->
-                        </div><!-- end col -->
-
-                        <div class="col-sm-4">
-                            <div class="widget">
-                                <h5 class="subtitle text-uppercase"><span class="text-primary">Most Viewed</span> Products</h5>
-
-                                <ul class="items">
-                                    <li>
-                                        <a href="shop-single-product-v1.html" class="product-image">
-                                            <img th:src="@{/template/plus-template/img/products/men_06.jpg}" alt="Sample Product ">
-                                        </a>
-                                        <div class="product-details">
-                                            <h6 class="regular">
-                                                <a href="shop-single-product-v1.html">Printed Summer Dress</a>
-                                            </h6>
-                                            <span class="price text-primary">$19.99</span>
-                                            <div class="rate text-warning">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </li><!-- end item -->
-                                    <li>
-                                        <a href="shop-single-product-v1.html" class="product-image">
-                                            <img th:src="@{/template/plus-template/img/products/women_03.jpg}" alt="Sample Product ">
-                                        </a>
-                                        <div class="product-details">
-                                            <h6 class="regular">
-                                                <a href="shop-single-product-v1.html">Printed Summer Dress</a>
-                                            </h6>
-                                            <span class="price text-primary">$29.99</span>
-                                            <div class="rate text-warning">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </li><!-- end item -->
-                                    <li>
-                                        <a href="shop-single-product-v1.html" class="product-image">
-                                            <img th:src="@{/template/plus-template/img/products/bags_02.jpg}" alt="Sample Product ">
-                                        </a>
-                                        <div class="product-details">
-                                            <h6 class="regular">
-                                                <a href="shop-single-product-v1.html">Printed Summer Dress</a>
-                                            </h6>
-                                            <span class="price text-primary">$15.99</span>
-                                            <div class="rate text-warning">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </li><!-- end item -->
-                                    <li>
-                                        <a href="shop-single-product-v1.html" class="product-image">
-                                            <img th:src="@{/template/plus-template/img/products/bags_04.jpg}" alt="Sample Product ">
-                                        </a>
-                                        <div class="product-details">
-                                            <h6 class="regular">
-                                                <a href="shop-single-product-v1.html">Printed Summer Dress</a>
-                                            </h6>
-                                            <span class="price text-primary">$45.99</span>
-                                            <div class="rate text-warning">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </li><!-- end item -->
-                                </ul>
-                            </div><!-- end widget -->
-                        </div><!-- end col -->
-                    </div><!-- end row -->
-                </div><!-- end container -->
-            </section>
-            <!-- end section -->
-
-
-            <!-- start section -->
-            <section class="primary-background">
-                <div class="container">
-                    <div class="box-banner-wide primary-background">
-                        <div class="row">
-                            <div class="col-sm-4 vertical-align">
-                                <h2 class="alt-font text-uppercase text-white">
-                                    Free <span class="regular">Delivery days!</span>
-                                </h2>
-                            </div><!-- end col -->
-                            <div class="col-sm-4 vertical-align">
-                                <p class="mt-20">Typi non habent claritatem insitam, est usus legentis in iis qui facit eorum claritatem.</p>
-                            </div><!-- end col -->
-                            <div class="col-sm-4 vertical-align text-right">
-                                <a target="_blank" href="https://wrapbootstrap.com/theme/plus-responsive-e-commerce-template-WB0R2CN86" class="btn btn-light semi-circle btn-md">Purchase</a>
-                            </div><!-- end col -->
-                        </div><!-- end row -->
-                    </div><!-- end box-banner-wide -->
-                </div><!-- end container -->
-            </section>
-            <!-- end section -->
-
-            <!-- start section -->
-            <section>
-                <div class="container">
-                    <!-- Modal Product Quick View -->
-                    <div class="modal fade productQuickView" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                        <div class="modal-dialog modal-lg" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                    <h5>Lorem ipsum dolar sit amet</h5>
-                                </div><!-- end modal-header -->
-                                <div class="modal-body">
-                                    <div class="row">
-                                        <div class="col-sm-5">
-                                            <div class='carousel slide product-slider' data-ride='carousel' data-interval="false">
-                                                <div class='carousel-inner'>
-                                                    <div class='item active'>
-                                                        <figure>
-                                                            <img th:src='@{/template/plus-template/img/products/men_01.jpg}' alt='' />
-                                                        </figure>
-                                                    </div><!-- end item -->
-                                                    <div class='item'>
-                                                        <div class="embed-responsive embed-responsive-16by9">
-                                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NrmMk1Myrxc"></iframe>
-                                                        </div>
-                                                    </div><!-- end item -->
-                                                    <div class='item'>
-                                                        <figure>
-                                                            <img th:src='@{/template/plus-template/img/products/men_03.jpg}' alt='' />
-                                                        </figure>
-                                                    </div><!-- end item -->
-                                                    <div class='item'>
-                                                        <figure>
-                                                            <img th:src='@{/template/plus-template/img/products/men_04.jpg}' alt='' />
-                                                        </figure>
-                                                    </div><!-- end item -->
-                                                    <div class='item'>
-                                                        <figure>
-                                                            <img th:src='@{/template/plus-template/img/products/men_05.jpg}' alt=''/>
-                                                        </figure>
-                                                    </div><!-- end item -->
-
-                                                    <!-- Arrows -->
-                                                    <a class='left carousel-control' href='.html' data-slide='prev'>
-                                                        <span class='fa fa-angle-left'></span>
-                                                    </a>
-                                                    <a class='right carousel-control' href='.html' data-slide='next'>
-                                                        <span class='fa fa-angle-right'></span>
-                                                    </a>
-                                                </div><!-- end carousel-inner -->
-
-                                                <!-- thumbs -->
-                                                <ol class='carousel-indicators mCustomScrollbar meartlab'>
-                                                    <li data-target='.product-slider' data-slide-to='0' class='active'><img th:src='@{/template/plus-template/img/products/men_01.jpg}' alt='' /></li>
-                                                    <li data-target='.product-slider' data-slide-to='1'><img th:src='@{/template/plus-template/img/products/men_02.jpg}' alt='' /></li>
-                                                    <li data-target='.product-slider' data-slide-to='2'><img th:src='@{/template/plus-template/img/products/men_03.jpg}' alt='' /></li>
-                                                    <li data-target='.product-slider' data-slide-to='3'><img th:src='@{/template/plus-template/img/products/men_04.jpg}' alt='' /></li>
-                                                    <li data-target='.product-slider' data-slide-to='4'><img th:src='@{/template/plus-template/img/products/men_05.jpg}' alt='' /></li>
-                                                    <li data-target='.product-slider' data-slide-to='5'><img th:src='@{/template/plus-template/img/products/men_06.jpg}' alt='' /></li>
-                                                </ol><!-- end carousel-indicators -->
-                                            </div><!-- end carousel -->
-                                        </div><!-- end col -->
-                                        <div class="col-sm-7">
-                                            <p class="text-gray alt-font">Product code: 1032446</p>
-
-                                            <i class="fa fa-star text-warning"></i>
-                                            <i class="fa fa-star text-warning"></i>
-                                            <i class="fa fa-star text-warning"></i>
-                                            <i class="fa fa-star text-warning"></i>
-                                            <i class="fa fa-star-half-o text-warning"></i>
-                                            <span>(12 reviews)</span>
-                                            <h4 class="text-primary">$79.00</h4>
-                                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-                                            <hr class="spacer-10">
-                                            <div class="row">
-                                                <div class="col-md-4 col-sm-6 col-xs-12">
-                                                    <select class="form-control" name="select">
-                                                        <option value="" selected>Color</option>
-                                                        <option value="red">Red</option>
-                                                        <option value="green">Green</option>
-                                                        <option value="blue">Blue</option>
-                                                    </select>
-                                                </div><!-- end col -->
-                                                <div class="col-md-4 col-sm-6 col-xs-12">
-                                                    <select class="form-control" name="select">
-                                                        <option value="">Size</option>
-                                                        <option value="">S</option>
-                                                        <option value="">M</option>
-                                                        <option value="">L</option>
-                                                        <option value="">XL</option>
-                                                        <option value="">XXL</option>
-                                                    </select>
-                                                </div><!-- end col -->
-                                                <div class="col-md-4 col-sm-12">
-                                                    <select class="form-control" name="select">
-                                                        <option value="" selected>QTY</option>
-                                                        <option value="">1</option>
-                                                        <option value="">2</option>
-                                                        <option value="">3</option>
-                                                        <option value="">4</option>
-                                                        <option value="">5</option>
-                                                        <option value="">6</option>
-                                                        <option value="">7</option>
-                                                    </select>
-                                                </div><!-- end col -->
-                                            </div><!-- end row -->
-                                            <hr class="spacer-10">
-                                            <ul class="list list-inline">
-                                                <li><button type="button" class="btn btn-default btn-md round"><i class="fa fa-shopping-basket mr-5"></i>Add to Cart</button></li>
-                                                <li><button type="button" class="btn btn-gray btn-md round"><i class="fa fa-heart mr-5"></i>Add to Wishlist</button></li>
-                                            </ul>
-                                        </div><!-- end col -->
-                                    </div><!-- end row -->
-                                </div><!-- end modal-body -->
-                            </div><!-- end modal-content -->
-                        </div><!-- end modal-dialog -->
-                    </div><!-- end productRewiew -->
-                </div><!-- end container -->
-            </section>
-            <!-- end section -->
+           <!--================Home Banner Area =================-->
+			<section class="home_banner_area">
+			    <div class="banner_inner d-flex align-items-center">
+			        <div class="container">
+			            <div class="banner_content row">
+			                <div class="col-lg-5">
+			                    <h3>Georgia Helmet <br />Collections!</h3>
+			                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+			                    <a class="white_bg_btn" href="#">View Collection</a>
+			                </div>
+			                <div class="col-lg-7">
+			                    <div class="halemet_img">
+			                        <img th:src="@{/template/listashop/img/banner/helmat.png}">
+			                    </div>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			</section>
+			<!--================End Home Banner Area =================-->
+			
+			<!--================Feature Product Area =================-->
+			<section class="feature_product_area">
+			    <div class="main_box">
+			        <div class="container">
+			            <div class="row hot_product_inner">
+			                <div class="col-lg-6">
+			                    <div class="hot_p_item">
+			                        <img class="img-fluid" th:src="@{/template/listashop/img/product/hot-product/hot-p-1.jpg}">
+			                        <div class="product_text">
+			                            <h4>Hot Deals of <br />this Month</h4>
+			                            <a href="#">Shop Now</a>
+			                        </div>
+			                    </div>
+			                </div>
+			                <div class="col-lg-6">
+			                    <div class="hot_p_item">
+			                        <img class="img-fluid" th:src="@{/template/listashop/img/product/hot-product/hot-p-2.jpg}">
+			                        <div class="product_text">
+			                            <h4>Hot Deals of <br />this Month</h4>
+			                            <a href="#">Shop Now</a>
+			                        </div>
+			                    </div>
+			                </div>
+			            </div>
+			            <div class="feature_product_inner">
+			                <div class="main_title">
+			                    <h2>Featured Products</h2>
+			                    <p>Who are in extremely love with eco friendly system.</p>
+			                </div>
+			                <div class="feature_p_slider owl-carousel">
+			                    <div class="item">
+			                        <div class="f_p_item">
+			                            <div class="f_p_img">
+			                                <img class="img-fluid" th:src="@{/template/listashop/img/product/feature-product/f-p-1.jpg}">
+			                                <div class="p_icon">
+			                                    <a href="#"><i class="lnr lnr-heart"></i></a>
+			                                    <a href="#"><i class="lnr lnr-cart"></i></a>
+			                                </div>
+			                            </div>
+			                            <a href="#"><h4>Long Sleeve TShirt</h4></a>
+			                            <h5>$150.00</h5>
+			                        </div>
+			                    </div>
+			                    <div class="item">
+			                        <div class="f_p_item">
+			                            <div class="f_p_img">
+			                                <img class="img-fluid" th:src="@{/template/listashop/img/product/feature-product/f-p-2.jpg}">
+			                                <div class="p_icon">
+			                                    <a href="#"><i class="lnr lnr-heart"></i></a>
+			                                    <a href="#"><i class="lnr lnr-cart"></i></a>
+			                                </div>
+			                            </div>
+			                            <a href="#"><h4>Long Sleeve TShirt</h4></a>
+			                            <h5>$150.00</h5>
+			                        </div>
+			                    </div>
+			                    <div class="item">
+			                        <div class="f_p_item">
+			                            <div class="f_p_img">
+			                                <img class="img-fluid" th:src="@{/template/listashop/img/product/feature-product/f-p-3.jpg}">
+			                                <div class="p_icon">
+			                                    <a href="#"><i class="lnr lnr-heart"></i></a>
+			                                    <a href="#"><i class="lnr lnr-cart"></i></a>
+			                                </div>
+			                            </div>
+			                            <a href="#"><h4>Long Sleeve TShirt</h4></a>
+			                            <h5>$150.00</h5>
+			                        </div>
+			                    </div>
+			                    <div class="item">
+			                        <div class="f_p_item">
+			                            <div class="f_p_img">
+			                                <img class="img-fluid" th:src="@{/template/listashop/img/product/feature-product/f-p-4.jpg}">
+			                                <div class="p_icon">
+			                                    <a href="#"><i class="lnr lnr-heart"></i></a>
+			                                    <a href="#"><i class="lnr lnr-cart"></i></a>
+			                                </div>
+			                            </div>
+			                            <a href="#"><h4>Long Sleeve TShirt</h4></a>
+			                            <h5>$150.00</h5>
+			                        </div>
+			                    </div>
+			                    <div class="item">
+			                        <div class="f_p_item">
+			                            <div class="f_p_img">
+			                                <img class="img-fluid" th:src="@{/template/listashop/img/product/feature-product/f-p-1.jpg}">
+			                                <div class="p_icon">
+			                                    <a href="#"><i class="lnr lnr-heart"></i></a>
+			                                    <a href="#"><i class="lnr lnr-cart"></i></a>
+			                                </div>
+			                            </div>
+			                            <a href="#"><h4>Long Sleeve TShirt</h4></a>
+			                            <h5>$150.00</h5>
+			                        </div>
+			                    </div>
+			                    <div class="item">
+			                        <div class="f_p_item">
+			                            <div class="f_p_img">
+			                                <img class="img-fluid" th:src="@{/template/listashop/img/product/feature-product/f-p-2.jpg}">
+			                                <div class="p_icon">
+			                                    <a href="#"><i class="lnr lnr-heart"></i></a>
+			                                    <a href="#"><i class="lnr lnr-cart"></i></a>
+			                                </div>
+			                            </div>
+			                            <a href="#"><h4>Long Sleeve TShirt</h4></a>
+			                            <h5>$150.00</h5>
+			                        </div>
+			                    </div>
+			                    <div class="item">
+			                        <div class="f_p_item">
+			                            <div class="f_p_img">
+			                                <img class="img-fluid" th:src="@{/template/listashop/img/product/feature-product/f-p-3.jpg}">
+			                                <div class="p_icon">
+			                                    <a href="#"><i class="lnr lnr-heart"></i></a>
+			                                    <a href="#"><i class="lnr lnr-cart"></i></a>
+			                                </div>
+			                            </div>
+			                            <a href="#"><h4>Long Sleeve TShirt</h4></a>
+			                            <h5>$150.00</h5>
+			                        </div>
+			                    </div>
+			                    <div class="item">
+			                        <div class="f_p_item">
+			                            <div class="f_p_img">
+			                                <img class="img-fluid" th:src="@{/template/listashop/img/product/feature-product/f-p-4.jpg}">
+			                                <div class="p_icon">
+			                                    <a href="#"><i class="lnr lnr-heart"></i></a>
+			                                    <a href="#"><i class="lnr lnr-cart"></i></a>
+			                                </div>
+			                            </div>
+			                            <a href="#"><h4>Long Sleeve TShirt</h4></a>
+			                            <h5>$150.00</h5>
+			                        </div>
+			                    </div>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			</section>
+			<!--================End Feature Product Area =================-->
+			
+			<!--================Deal Timer Area =================-->
+			<section class="timer_area">
+			    <div class="container">
+			        <div class="main_title">
+			            <h2>Exclusive Hot Deal Ends Soon!</h2>
+			            <p>Who are in extremely love with eco friendly system.</p>
+			            <a class="main_btn" href="#">Shop Now</a>
+			        </div>
+			        <div class="timer_inner">
+			            <div id="timer" class="timer">
+			                <div class="timer__section days">
+			                    <div class="timer__number"></div>
+			                    <div class="timer__label">days</div>
+			                </div>
+			                <div class="timer__section hours">
+			                    <div class="timer__number"></div>
+			                    <div class="timer__label">hours</div>
+			                </div>
+			                <div class="timer__section minutes">
+			                    <div class="timer__number"></div>
+			                    <div class="timer__label">Minutes</div>
+			                </div>
+			                <div class="timer__section seconds">
+			                    <div class="timer__number"></div>
+			                    <div class="timer__label">seconds</div>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			</section>
+			<!--================End Deal Timer Area =================-->
+			
+			<!--================Latest Product Area =================-->
+			<section class="feature_product_area latest_product_area">
+			    <div class="main_box">
+			        <div class="container">
+			            <div class="feature_product_inner">
+			                <div class="main_title">
+			                    <h2>Latest Products</h2>
+			                    <p>Who are in extremely love with eco friendly system.</p>
+			                </div>
+			                <div class="latest_product_inner row">
+			                    <div class="col-lg-3 col-md-4 col-sm-6">
+			                        <div class="f_p_item">
+			                            <div class="f_p_img">
+			                                <img class="img-fluid" th:src="@{/template/listashop/img/product/feature-product/f-p-1.jpg}">
+			                                <div class="p_icon">
+			                                    <a href="#"><i class="lnr lnr-heart"></i></a>
+			                                    <a href="#"><i class="lnr lnr-cart"></i></a>
+			                                </div>
+			                            </div>
+			                            <a href="#"><h4>Long Sleeve TShirt</h4></a>
+			                            <h5>$150.00</h5>
+			                        </div>
+			                    </div>
+			                    <div class="col-lg-3 col-md-4 col-sm-6">
+			                        <div class="f_p_item">
+			                            <div class="f_p_img">
+			                                <img class="img-fluid" th:src="@{/template/listashop/img/product/feature-product/f-p-2.jpg}">
+			                                <div class="p_icon">
+			                                    <a href="#"><i class="lnr lnr-heart"></i></a>
+			                                    <a href="#"><i class="lnr lnr-cart"></i></a>
+			                                </div>
+			                            </div>
+			                            <a href="#"><h4>Long Sleeve TShirt</h4></a>
+			                            <h5>$150.00</h5>
+			                        </div>
+			                    </div>
+			                    <div class="col-lg-3 col-md-4 col-sm-6">
+			                        <div class="f_p_item">
+			                            <div class="f_p_img">
+			                                <img class="img-fluid" th:src="@{/template/listashop/img/product/feature-product/f-p-3.jpg}">
+			                                <div class="p_icon">
+			                                    <a href="#"><i class="lnr lnr-heart"></i></a>
+			                                    <a href="#"><i class="lnr lnr-cart"></i></a>
+			                                </div>
+			                            </div>
+			                            <a href="#"><h4>Long Sleeve TShirt</h4></a>
+			                            <h5>$150.00</h5>
+			                        </div>
+			                    </div>
+			                    <div class="col-lg-3 col-md-4 col-sm-6">
+			                        <div class="f_p_item">
+			                            <div class="f_p_img">
+			                                <img class="img-fluid" th:src="@{/template/listashop/img/product/feature-product/f-p-4.jpg}">
+			                                <div class="p_icon">
+			                                    <a href="#"><i class="lnr lnr-heart"></i></a>
+			                                    <a href="#"><i class="lnr lnr-cart"></i></a>
+			                                </div>
+			                            </div>
+			                            <a href="#"><h4>Long Sleeve TShirt</h4></a>
+			                            <h5>$150.00</h5>
+			                        </div>
+			                    </div>
+			                    <div class="col-lg-3 col-md-4 col-sm-6">
+			                        <div class="f_p_item">
+			                            <div class="f_p_img">
+			                                <img class="img-fluid" th:src="@{/template/listashop/img/product/feature-product/f-p-5.jpg}">
+			                                <div class="p_icon">
+			                                    <a href="#"><i class="lnr lnr-heart"></i></a>
+			                                    <a href="#"><i class="lnr lnr-cart"></i></a>
+			                                </div>
+			                            </div>
+			                            <a href="#"><h4>Long Sleeve TShirt</h4></a>
+			                            <h5>$150.00</h5>
+			                        </div>
+			                    </div>
+			                    <div class="col-lg-3 col-md-4 col-sm-6">
+			                        <div class="f_p_item">
+			                            <div class="f_p_img">
+			                                <img class="img-fluid" th:src="@{/template/listashop/img/product/feature-product/f-p-6.jpg}">
+			                                <div class="p_icon">
+			                                    <a href="#"><i class="lnr lnr-heart"></i></a>
+			                                    <a href="#"><i class="lnr lnr-cart"></i></a>
+			                                </div>
+			                            </div>
+			                            <a href="#"><h4>Long Sleeve TShirt</h4></a>
+			                            <h5>$150.00</h5>
+			                        </div>
+			                    </div>
+			                    <div class="col-lg-3 col-md-4 col-sm-6">
+			                        <div class="f_p_item">
+			                            <div class="f_p_img">
+			                                <img class="img-fluid" th:src="@{/template/listashop/img/product/feature-product/f-p-7.jpg}">
+			                                <div class="p_icon">
+			                                    <a href="#"><i class="lnr lnr-heart"></i></a>
+			                                    <a href="#"><i class="lnr lnr-cart"></i></a>
+			                                </div>
+			                            </div>
+			                            <a href="#"><h4>Long Sleeve TShirt</h4></a>
+			                            <h5>$150.00</h5>
+			                        </div>
+			                    </div>
+			                    <div class="col-lg-3 col-md-4 col-sm-6">
+			                        <div class="f_p_item">
+			                            <div class="f_p_img">
+			                                <img class="img-fluid" th:src="@{/template/listashop/img/product/feature-product/f-p-8.jpg}">
+			                                <div class="p_icon">
+			                                    <a href="#"><i class="lnr lnr-heart"></i></a>
+			                                    <a href="#"><i class="lnr lnr-cart"></i></a>
+			                                </div>
+			                            </div>
+			                            <a href="#"><h4>Long Sleeve TShirt</h4></a>
+			                            <h5>$150.00</h5>
+			                        </div>
+			                    </div>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			</section>
+			<!--================End Latest Product Area =================-->
+			
+			<!--================Clients Logo Area =================-->
+			<section class="clients_logo_area">
+			    <div class="container">
+			        <div class="main_title">
+			            <h2>Top Brands of this Month</h2>
+			            <p>Who are in extremely love with eco friendly system.</p>
+			        </div>
+			        <div class="clients_slider owl-carousel">
+			            <div class="item">
+			                <img th:src="@{/template/listashop/img/clients-logo/c-logo-1.png}">
+			            </div>
+			            <div class="item">
+			                <img th:src="@{/template/listashop/img/clients-logo/c-logo-2.png}">
+			            </div>
+			            <div class="item">
+			                <img th:src="@{/template/listashop/img/clients-logo/c-logo-3.png}">
+			            </div>
+			            <div class="item">
+			                <img th:src="@{/template/listashop/img/clients-logo/c-logo-4.png}">
+			            </div>
+			            <div class="item">
+			                <img th:src="@{/template/listashop/img/clients-logo/c-logo-5.png}">
+			            </div>
+			        </div>
+			    </div>
+			</section>
+			<!--================End Clients Logo Area =================-->
+			
+			<!--================Most Product Area =================-->
+			<section class="most_product_area">
+			    <div class="main_box">
+			        <div class="container">
+			            <div class="main_title">
+			                <h2>Most Searched Products</h2>
+			                <p>Who are in extremely love with eco friendly system.</p>
+			            </div>
+			            <div class="row most_product_inner">
+			                <div class="col-lg-3 col-sm-6">
+			                    <div class="most_p_list">
+			                        <div class="media">
+			                            <div class="d-flex">
+			                                <img th:src="@{/template/listashop/img/product/most-product/m-product-1.jpg}">
+			                            </div>
+			                            <div class="media-body">
+			                                <a href="#"><h4>Black lace Heels</h4></a>
+			                                <h3>$189.00</h3>
+			                            </div>
+			                        </div>
+			                        <div class="media">
+			                            <div class="d-flex">
+			                                <img th:src="@{/template/listashop/img/product/most-product/m-product-2.jpg}">
+			                            </div>
+			                            <div class="media-body">
+			                                <a href="#"><h4>Black lace Heels</h4></a>
+			                                <h3>$189.00</h3>
+			                            </div>
+			                        </div>
+			                        <div class="media">
+			                            <div class="d-flex">
+			                                <img th:src="@{/template/listashop/img/product/most-product/m-product-3.jpg}">
+			                            </div>
+			                            <div class="media-body">
+			                                <a href="#"><h4>Black lace Heels</h4></a>
+			                                <h3>$189.00</h3>
+			                            </div>
+			                        </div>
+			                    </div>
+			                </div>
+			                <div class="col-lg-3 col-sm-6">
+			                    <div class="most_p_list">
+			                        <div class="media">
+			                            <div class="d-flex">
+			                                <img th:src="@{/template/listashop/img/product/most-product/m-product-4.jpg}">
+			                            </div>
+			                            <div class="media-body">
+			                                <a href="#"><h4>Black lace Heels</h4></a>
+			                                <h3>$189.00</h3>
+			                            </div>
+			                        </div>
+			                        <div class="media">
+			                            <div class="d-flex">
+			                                <img th:src="@{/template/listashop/img/product/most-product/m-product-5.jpg}">
+			                            </div>
+			                            <div class="media-body">
+			                                <a href="#"><h4>Black lace Heels</h4></a>
+			                                <h3>$189.00</h3>
+			                            </div>
+			                        </div>
+			                        <div class="media">
+			                            <div class="d-flex">
+			                                <img th:src="@{/template/listashop/img/product/most-product/m-product-6.jpg}">
+			                            </div>
+			                            <div class="media-body">
+			                                <a href="#"><h4>Black lace Heels</h4></a>
+			                                <h3>$189.00</h3>
+			                            </div>
+			                        </div>
+			                    </div>
+			                </div>
+			                <div class="col-lg-3 col-sm-6">
+			                    <div class="most_p_list">
+			                        <div class="media">
+			                            <div class="d-flex">
+			                                <img th:src="@{/template/listashop/img/product/most-product/m-product-7.jpg}">
+			                            </div>
+			                            <div class="media-body">
+			                                <a href="#"><h4>Black lace Heels</h4></a>
+			                                <h3>$189.00</h3>
+			                            </div>
+			                        </div>
+			                        <div class="media">
+			                            <div class="d-flex">
+			                                <img th:src="@{/template/listashop/img/product/most-product/m-product-8.jpg}">
+			                            </div>
+			                            <div class="media-body">
+			                                <a href="#"><h4>Black lace Heels</h4></a>
+			                                <h3>$189.00</h3>
+			                            </div>
+			                        </div>
+			                        <div class="media">
+			                            <div class="d-flex">
+			                                <img th:src="@{/template/listashop/img/product/most-product/m-product-9.jpg}">
+			                            </div>
+			                            <div class="media-body">
+			                                <a href="#"><h4>Black lace Heels</h4></a>
+			                                <h3>$189.00</h3>
+			                            </div>
+			                        </div>
+			                    </div>
+			                </div>
+			                <div class="col-lg-3 col-sm-6">
+			                    <div class="most_p_list">
+			                        <div class="media">
+			                            <div class="d-flex">
+			                                <img th:src="@{/template/listashop/img/product/most-product/m-product-10.jpg}">
+			                            </div>
+			                            <div class="media-body">
+			                                <a href="#"><h4>Black lace Heels</h4></a>
+			                                <h3>$189.00</h3>
+			                            </div>
+			                        </div>
+			                        <div class="media">
+			                            <div class="d-flex">
+			                                <img th:src="@{/template/listashop/img/product/most-product/m-product-11.jpg}">
+			                            </div>
+			                            <div class="media-body">
+			                                <a href="#"><h4>Black lace Heels</h4></a>
+			                                <h3>$189.00</h3>
+			                            </div>
+			                        </div>
+			                        <div class="media">
+			                            <div class="d-flex">
+			                                <img th:src="@{/template/listashop/img/product/most-product/m-product-12.jpg}">
+			                            </div>
+			                            <div class="media-body">
+			                                <a href="#"><h4>Black lace Heels</h4></a>
+			                                <h3>$189.00</h3>
+			                            </div>
+			                        </div>
+			                    </div>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			</section>
+			<!--================End Most Product Area =================-->
         </th:block>
     </body>
 </html>

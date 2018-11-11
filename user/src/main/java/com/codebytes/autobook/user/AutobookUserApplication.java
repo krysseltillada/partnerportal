@@ -1,5 +1,7 @@
 package com.codebytes.autobook.user;
 
+import java.security.Principal;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Controller;
@@ -9,29 +11,32 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class AutobookUserApplication
 {
-	@GetMapping("/user")
-	public String login () { return "login"; }
+	@GetMapping("/")
+	public String home () { return "index"; }
+	
+	@GetMapping("/login")
+	public String login (Principal principal) { return principal == null ? "login" : "redirect:/"; }
 
-	@GetMapping("/user/registration")
-	public String register () { return "registration"; }
+	@GetMapping("/register")
+	public String register ( Principal principal) { return principal == null ? "registration" : "redirect:/"; }
 
-	@GetMapping("/user/dashboard")
-	public String dashboard () { return "dashboard"; }
-
-	@GetMapping("/user/dashboard/cart")
+	@GetMapping("/cart")
 	public String cart () { return "cart"; }
 
-	@GetMapping("/user/dashboard/blog")
+	@GetMapping("/blog")
 	public String blog () { return "blog"; }
 
-	@GetMapping("/user/dashboard/blog_details")
-	public String blog_details () { return "blog-details"; }
+	@GetMapping("/blog_details")
+	public String blogDetails () { return "blog-details"; }
 
-	@GetMapping("/user/dashboard/confirmation")
+	@GetMapping("/confirmation")
 	public String confirmation () { return "confirmation"; }
 
-	@GetMapping("/user/dashboard/product_details")
-	public String product_details () { return "product-details"; }
+	@GetMapping("/product_details")
+	public String productDetails () { return "product-details"; }
+	
+	@GetMapping("/dashboard")
+	public String dashboard () { return "dashboard"; }
 
 	public static void main(String[] args) {
 		SpringApplication.run(AutobookUserApplication.class, args);

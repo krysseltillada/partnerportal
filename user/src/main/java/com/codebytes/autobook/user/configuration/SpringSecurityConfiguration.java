@@ -15,15 +15,15 @@ public class SpringSecurityConfiguration{
     @Configuration
     public static class SpringSecurityUserAdapterConfiguration extends WebSecurityConfigurerAdapter {
 
-        private String[] adminUrls = {"/user/dashboard/**"};
         private String[] ignoreUrls = {"/h2-console/**"};
+        private String[] permitAllUrls = {"/template/**"};
 
         @Override
         protected void configure(AuthenticationManagerBuilder auth) throws Exception {
             auth.inMemoryAuthentication()
-                    .withUser("user")
-                    .password(encoder().encode("user"))
-                    .roles("USER");
+                    .withUser("customer")
+                    .password(encoder().encode("customer"))
+                    .roles("CUSTOMER");
         }
 
         @Bean
@@ -34,27 +34,25 @@ public class SpringSecurityConfiguration{
         @Override
         protected void configure(HttpSecurity http) throws Exception {
 
-            http.antMatcher("/user/**")
+            http.antMatcher("/**")
                     .authorizeRequests()
-                    .anyRequest().hasRole("USER")
-                    .and()
-                    .authorizeRequests()
-                    .antMatchers(adminUrls).hasRole("USER")
-                    .and()
-                    .formLogin()
-                    .loginPage("/user")
-                    .defaultSuccessUrl("/user/dashboard")
+                    .antMatchers(permitAllUrls)
                     .permitAll()
                     .and()
-                    .logout()
-                    .logoutUrl("/user/logout")
-                    .logoutSuccessUrl("/user?logout")
+                .formLogin()
+                    .loginPage("/login")
+                    .defaultSuccessUrl("/")
                     .permitAll()
                     .and()
-                    .csrf()
+                .logout()
+                    .logoutUrl("/logout")
+                    .logoutSuccessUrl("/login?logout")
+                    .permitAll()
+                    .and()
+                .csrf()
                     .ignoringAntMatchers(ignoreUrls)
                     .and()
-                    .headers()
+                .headers()
                     .frameOptions()
                     .sameOrigin();
         }
