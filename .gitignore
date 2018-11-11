@@ -22,15 +22,4 @@ mvnw
 mvnw.cmd
 
 ### Eclipse ###
-.settings/
-.gitignore.swp
-.project
-admin/.settings/
 admin/bin/
-admin/target/
-admin/.classpath
-admin/.project
-user/.settings/
-user/target/
-user/.classpath
-user/.project
