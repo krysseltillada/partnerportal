@@ -1,4 +1,4 @@
-package com.codebytes.autobook.admin;
+package com.codebytes.partnerportal.admin;
 
 import java.security.Principal;
 
@@ -9,7 +9,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @SpringBootApplication
 @Controller
-public class AutobookAdminApplication {
+public class PartnerPortalAdminApplication
+{
 
 	@GetMapping("/admin/dashboard")
 	public String dashboard () {
@@ -20,6 +21,6 @@ public class AutobookAdminApplication {
 	public String login (Principal principal) { return principal == null ? "login" : "redirect:/admin/dashboard"; }
 
 	public static void main(String[] args) {
-		SpringApplication.run(AutobookAdminApplication.class, args);
+		SpringApplication.run(PartnerPortalAdminApplication.class, args);
 	}
 }

@@ -1,4 +1,4 @@
-package com.codebytes.autobook.user;
+package com.codebytes.partnerportal.user;
 
 import java.security.Principal;
 
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @SpringBootApplication
 @Controller
-public class AutobookUserApplication
+public class PartnerPortalUserApplication
 {
 	@GetMapping("/")
 	public String home () { return "index"; }
@@ -39,6 +39,6 @@ public class AutobookUserApplication
 	public String dashboard () { return "dashboard"; }
 
 	public static void main(String[] args) {
-		SpringApplication.run(AutobookUserApplication.class, args);
+		SpringApplication.run(PartnerPortalUserApplication.class, args);
 	}
 }

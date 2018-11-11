@@ -3,8 +3,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.codebytes.autobook</groupId>
-	<artifactId>autobook</artifactId>
+	<groupId>com.codebytes.partnerportal</groupId>
+	<artifactId>partnerportal</artifactId>
 	<version>0.1</version>
 	<packaging>pom</packaging>
 
@@ -13,8 +13,8 @@
 		<module>user</module>
 	</modules>
 
-	<name>autobook</name>
-	<description>peer-to-peer application, using an API to be provided on-site, on which the users can rent a car from private owners registered on the system.</description>
+	<name>partnerportal</name>
+	<description>Build a website with an accessible web portal for discounts from different brands and services. Website users must be able to register or sign up to avail the discounted products from partner brands and services using credits from the system. Partner brands must be able to post their products for users to browse and avail.</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>

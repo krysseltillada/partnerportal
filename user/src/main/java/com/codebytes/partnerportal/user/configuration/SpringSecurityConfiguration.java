@@ -1,4 +1,4 @@
-package com.codebytes.autobook.user.configuration;
+package com.codebytes.partnerportal.user.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

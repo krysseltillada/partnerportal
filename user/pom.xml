@@ -4,8 +4,8 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>com.codebytes.autobook</groupId>
-		<artifactId>autobook</artifactId>
+		<groupId>com.codebytes.partnerportal</groupId>
+		<artifactId>partnerportal</artifactId>
 		<version>0.1</version>
 	</parent>
 
@@ -14,7 +14,7 @@
 	<packaging>jar</packaging>
 
 	<name>user</name>
-	<description>user module for autobook.</description>
+	<description>user module for partnerportal.</description>
 
 	<dependencies>
 		<dependency>
