@@ -1,37 +1,28 @@
 <!DOCTYPE html>
-<html class="loading"
-      lang="en"
-      data-textdirection="ltr"
-      xmlns:th="http://www.thymeleaf.org"
+<html lang="en"
+	  xmlns:th="http://www.thymeleaf.org"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 
-    <head>
-
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-        <meta name="description" content="Stack admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
-        <meta name="keywords" content="admin template, stack admin template, dashboard template, flat admin template, responsive admin template, web app">
-        <meta name="author" content="PIXINVENT">
-
-        <title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">PartnerPortal</title>
-
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">PartnerPortal</title>
         <th:block th:include="common/css :: cssFiles" />
-
-    </head>
-
-    <body class="vertical-layout vertical-menu-modern 2-columns   menu-expanded fixed-navbar" data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
-
-        <th:block th:include="common/topbar :: topbar" />
-
-        <th:block th:include="common/sidebar :: sidebar" />
-
-        <th:block layout:fragment="content" />
-
-        <th:block th:include="common/footer :: footer" />
-
+	</head>
+	
+	<body class="container-scroller">
+		<th:block th:include="common/topbar :: topbar" />
+		
+		<div class="container-fluid page-body-wrapper">
+	        <th:block th:include="common/sidebar :: sidebar" />
+			
+			<div class="main-panel">
+		        <th:block layout:fragment="content" />
+		
+		        <th:block th:include="common/footer :: footer" />
+	        </div>
+		</div>
         <th:block th:include="common/js :: javascriptFiles" />
-
-    </body>
+	</body>
 
 </html>

@@ -1,98 +1,60 @@
 <!DOCTYPE html>
-<html class="loading" lang="en" data-textdirection="ltr"
+<html lang="en"
 	xmlns:th="http://www.thymeleaf.org">
   
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Admin Login - PartnerPortal</title>
     <th:block th:include="common/css :: cssFiles" />
   </head>
-  <body class="vertical-layout vertical-menu-modern 1-column  bg-full-screen-image menu-expanded blank-page blank-page" data-open="click" data-menu="vertical-menu-modern" data-col="1-column">
+  <body>
   
-    <div class="app-content content">
-      <div class="content-wrapper">
-        <div class="content-header row">
-        </div>
-        <div class="content-body"><section class="flexbox-container">
-		    <div class="col-12 d-flex align-items-center justify-content-center">
-		        <div class="col-md-4 col-10 box-shadow-2 p-0">
-		            <div class="card border-grey border-lighten-3 px-1 py-1 m-0">
-		                <div class="card-header border-0">
-		                    <div class="card-title text-center">
-		                        <img th:src="@{/template/stack-template/app-assets/images/logo/stack-80x80.png}" alt="branding logo">
-		                    </div>
-		                    <h6 class="card-subtitle line-on-side text-muted text-center font-small-3 pt-2"><span>ADMIN Login</span></h6>
-		                </div>
-		                <div class="card-content">
-		                    <div class="card-body">
-		                        <form class="form-horizontal" th:action="@{/admin}" method="post">
-		                            <fieldset class="form-group position-relative has-icon-left">
-		                                <input type="text" class="form-control" id="user-name" placeholder="Your Username" name="username" required>
-		                                <div class="form-control-position">
-		                                    <i class="ft-user"></i>
-		                                </div>
-		                            </fieldset>
-		                            <fieldset class="form-group position-relative has-icon-left">
-		                                <input type="password" class="form-control" id="user-password" placeholder="Enter Password" name="password" required>
-		                                <div class="form-control-position">
-		                                    <i class="fa fa-key"></i>
-		                                </div>
-		                            </fieldset>
-		                            <div class="form-group row">
-		                                <div class="col-md-6 col-12 text-center text-sm-left">
-		                                    <a class="card-link info" data-toggle="modal" data-backdrop="false" data-target="#info">Forgot Password?</a>
-		                                </div>
-		                            </div>
-		                            <button type="submit" class="btn btn-outline-primary btn-block"><i class="ft-unlock"></i> Login</button>
-		                            
-		                            <div th:if="${param.error != null}" class="text-center">
-								    	<p class="red mt-2">Wrong username or password.</p>
-									</div>
-									<div th:if="${param.logout != null}" class="text-center">
-								    	<p class="success mt-2">You've successfully logged out.</p>
-									</div>
-		                        </form>
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-		    </div>
-		</section>
-
-        </div>
-      </div>
-    </div>
-    
-    <div class="modal fade text-left" id="info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel11" aria-hidden="true">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header bg-info white">
-					<h4 class="modal-title" id="myModalLabel11">Forgot Password?</h4>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<label>Email: </label>
-					<div class="form-group position-relative has-icon-left">
-						<input type="text" placeholder="Email Address" class="form-control">
-							<div class="form-control-position">
-								<i class="fa fa-envelope font-medium-5 line-height-1 text-muted icon-align"></i>
-							</div>
-						</div>
-						<p>Note: Please enter your registered email address. We will send you a link to change your password.</p>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn grey btn-outline-secondary" data-dismiss="modal">Close</button>
-						<button type="button" class="btn btn-outline-info">Send</button>
-					</div>
-				</div>
-			</div>
-		</div>
-						
-		<script  th:src="@{/template/stack-template/app-assets/vendors/js/vendors.min.js}" type="text/javascript"></script>
-	    <script th:src="@{/template/stack-template/app-assets/js/scripts/modal/components-modal.min.js}" type="text/javascript"></script>
-	
+  	<div class="container-scroller">
+	    <div class="container-fluid page-body-wrapper full-page-wrapper">
+	      <div class="content-wrapper d-flex align-items-center justify-content-center auth">    
+	        <div class="row w-100">
+	          <div class="col-lg-4 mx-auto">
+	            <div class="auth-form-light text-left p-5">
+	              <div class="text-center">
+	              	  <div class="brand-logo">
+		                <img th:src="@{/template/PurpleAdmin/images/logo-mini.svg}" width="75" height="75">
+		              </div>
+		              <h4>ADMIN Login</h4>
+	              <h6 class="font-weight-light">Sign in to continue.</h6>
+	              </div>
+	              <form  th:action="@{/admin}" method="post" class="pt-3">
+	                <div class="form-group">
+	                  <input type="text" class="form-control form-control-lg" placeholder="Username" name="username">
+	                </div>
+	                <div class="form-group">
+	                  <input type="password" class="form-control form-control-lg" placeholder="Password" name="password">
+	                </div>
+	                <div class="my-2 d-flex justify-content-between align-items-center">
+	                 
+	                  <a href="#" class="ml-1 white-text" data-toggle="modal" data-target="#exampleModal">Forgot Password?</a>
+	                </div>
+	                <div class="mt-3">
+	                  <button class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn" type="submit">SIGN IN</button>
+	                </div>
+	                
+	                
+	                 <div th:if="${param.error != null}" class="text-center">
+						<p class="text-danger mt-2">Wrong username or password.</p>
+					 </div>
+					 <div th:if="${param.logout != null}" class="text-center">
+						<p class="text-success mt-2">You've successfully logged out.</p>
+					 </div>
+	              </form>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	      <!-- content-wrapper ends -->
+	    </div>
+	    <!-- page-body-wrapper ends -->
+	  </div>
+	  
   </body>
 
 </html>

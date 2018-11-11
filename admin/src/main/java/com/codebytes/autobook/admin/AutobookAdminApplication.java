@@ -1,5 +1,7 @@
 package com.codebytes.autobook.admin;
 
+import java.security.Principal;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Controller;
@@ -15,7 +17,7 @@ public class AutobookAdminApplication {
 	}
 
 	@GetMapping("/admin")
-	public String login () { return "login"; }
+	public String login (Principal principal) { return principal == null ? "login" : "redirect:/admin/dashboard"; }
 
 	public static void main(String[] args) {
 		SpringApplication.run(AutobookAdminApplication.class, args);
