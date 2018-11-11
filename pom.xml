@@ -9,6 +9,8 @@
 	<packaging>pom</packaging>
 
 	<modules>
+		<module>common</module>
+		<module>api</module>
 		<module>admin</module>
 		<module>user</module>
 	</modules>
@@ -114,12 +116,14 @@
 	</dependencyManagement>
 
 	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-maven-plugin</artifactId>
+				</plugin>
+			</plugins>
+		</pluginManagement>
 	</build>
 
 

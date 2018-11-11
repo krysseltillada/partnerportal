@@ -18,6 +18,11 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>com.codebytes.partnerportal</groupId>
+			<artifactId>common</artifactId>
+			<version>0.1</version>
+		</dependency>
+		<dependency>
 			<groupId>org.thymeleaf.extras</groupId>
 			<artifactId>thymeleaf-extras-springsecurity4</artifactId>
 		</dependency>
@@ -30,5 +35,14 @@
 			<artifactId>spring-security-test</artifactId>
 		</dependency>
 	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
 
 </project>
