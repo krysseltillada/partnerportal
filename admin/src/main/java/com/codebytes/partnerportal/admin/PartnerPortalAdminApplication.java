@@ -14,13 +14,13 @@ import java.security.Principal;
 public class PartnerPortalAdminApplication
 {
 
-	@GetMapping("/admin/dashboard")
+	@GetMapping("/dashboard")
 	public String dashboard () {
 		return "dashboard";
 	}
 
-	@GetMapping("/admin")
-	public String login (Principal principal) { return principal == null ? "login" : "redirect:/admin/dashboard"; }
+	@GetMapping("/")
+	public String login (Principal principal) { return principal == null ? "login" : "redirect:/dashboard"; }
 
 	public static void main(String[] args) {
 		SpringApplication.run(PartnerPortalAdminApplication.class, args);

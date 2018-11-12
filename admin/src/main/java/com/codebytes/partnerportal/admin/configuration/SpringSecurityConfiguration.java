@@ -15,8 +15,8 @@ public class SpringSecurityConfiguration {
 	@Configuration
 	public static class SpringSecurityAdminAdapterConfiguration extends WebSecurityConfigurerAdapter {
 		
-		private String[] adminUrls = {"/admin/dashboard/**"};
-		private String[] ignoreUrls = {"/h2-console/**"};
+		private String[] adminUrls = {"/dashboard/**"};
+		private String[] permitAllUrls = {"/template/**"};
 		
 		@Override
 		protected void configure(AuthenticationManagerBuilder auth) throws Exception {
@@ -34,25 +34,24 @@ public class SpringSecurityConfiguration {
 		@Override
 		protected void configure(HttpSecurity http) throws Exception {
 
-			http.antMatcher("/admin/**")
+			http.antMatcher("/**")
 					.authorizeRequests()
+					.antMatchers(permitAllUrls)
+					.permitAll()
 					.anyRequest().hasRole("ADMIN")
 					.and()
 				.authorizeRequests()
 				.antMatchers(adminUrls).hasRole("ADMIN")
 					.and()
 				.formLogin()
-					.loginPage("/admin")
-					.defaultSuccessUrl("/admin/dashboard")
+					.loginPage("/")
+					.defaultSuccessUrl("/dashboard")
 					.permitAll()
 					.and()
 				.logout()
-					.logoutUrl("/admin/logout")
-					.logoutSuccessUrl("/admin?logout")
+					.logoutUrl("/logout")
+					.logoutSuccessUrl("/?logout")
 					.permitAll()
-					.and()
-				.csrf()
-					.ignoringAntMatchers(ignoreUrls)
 					.and()
 				.headers()
 					.frameOptions()
