@@ -15,7 +15,6 @@ public class SpringSecurityConfiguration{
     @Configuration
     public static class SpringSecurityUserAdapterConfiguration extends WebSecurityConfigurerAdapter {
 
-        private String[] ignoreUrls = {"/h2-console/**"};
         private String[] permitAllUrls = {"/template/**"};
 
         @Override
@@ -40,7 +39,7 @@ public class SpringSecurityConfiguration{
                     .permitAll()
                     .and()
                 .formLogin()
-                    .loginPage("/login")
+                    .loginPage("/")
                     .defaultSuccessUrl("/")
                     .permitAll()
                     .and()
@@ -48,9 +47,6 @@ public class SpringSecurityConfiguration{
                     .logoutUrl("/logout")
                     .logoutSuccessUrl("/login?logout")
                     .permitAll()
-                    .and()
-                .csrf()
-                    .ignoringAntMatchers(ignoreUrls)
                     .and()
                 .headers()
                     .frameOptions()
