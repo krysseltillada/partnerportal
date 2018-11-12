@@ -93,9 +93,9 @@
 			<version>2.3.0</version>
 		</dependency>
 		<dependency>
-		    <groupId>org.postgresql</groupId>
-		    <artifactId>postgresql</artifactId>
-		    <version>9.4-1200-jdbc41</version>
+		  <groupId>org.postgresql</groupId>
+		  <artifactId>postgresql</artifactId>
+		  <version>42.2.1</version>
 		</dependency>
 	</dependencies>
 
