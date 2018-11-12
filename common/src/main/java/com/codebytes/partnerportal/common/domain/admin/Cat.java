@@ -9,12 +9,12 @@ import javax.persistence.Id;
 
 @Data
 @Entity
-public class User
+public class Cat
 {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    public long id;
+    private long catId;
 
-    public String name;
-    public String password;
+    private String name;
+    private int hungryLevel;
 }
