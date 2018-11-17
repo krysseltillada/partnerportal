@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en"
+	xmlns:th="http://www.thymeleaf.org">
+  
+  <head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Admin Login - PartnerPortal</title>
+    <th:block th:include="common/css :: cssFiles" />
+  </head>
+  <body>
+  
+  	<div class="container-scroller">
+	    <div class="container-fluid page-body-wrapper full-page-wrapper">
+	      <div class="content-wrapper d-flex align-items-center justify-content-center auth">    
+	        <div class="row w-100">
+	          <div class="col-lg-4 mx-auto">
+	            <div class="auth-form-light text-left p-5">
+	              <div class="text-center">
+	              	  <div class="brand-logo">
+		                <img th:src="@{/template/PurpleAdmin/images/logo-mini.svg}" width="75" height="75">
+		              </div>
+		              <h4>ADMIN Login</h4>
+	              <h6 class="font-weight-light">Sign in to continue.</h6>
+	              </div>
+	              <form  th:action="@{/admin}" method="post" class="pt-3">
+	                <div class="form-group">
+	                  <input type="text" class="form-control form-control-lg" placeholder="Username" name="username">
+	                </div>
+	                <div class="form-group">
+	                  <input type="password" class="form-control form-control-lg" placeholder="Password" name="password">
+	                </div>
+	                <div class="my-2 d-flex justify-content-between align-items-center">
+	                 
+	                  <a href="#" class="ml-1 white-text" data-toggle="modal" data-target="#exampleModal">Forgot Password?</a>
+	                </div>
+	                <div class="mt-3">
+	                  <button class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn" type="submit">SIGN IN</button>
+	                </div>
+	                
+	                
+	                 <div th:if="${param.error != null}" class="text-center">
+						<p class="text-danger mt-2">Wrong username or password.</p>
+					 </div>
+					 <div th:if="${param.logout != null}" class="text-center">
+						<p class="text-success mt-2">You've successfully logged out.</p>
+					 </div>
+	              </form>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	      <!-- content-wrapper ends -->
+	    </div>
+	    <!-- page-body-wrapper ends -->
+	  </div>
+	  
+  </body>
+
+</html>

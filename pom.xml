@@ -10,8 +10,7 @@
 
 	<modules>
 		<module>common</module>
-		<module>api</module>
-		<module>admin</module>
+		<module>partner</module>
 		<module>user</module>
 	</modules>
 
