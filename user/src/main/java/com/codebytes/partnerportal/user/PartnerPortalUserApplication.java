@@ -1,7 +1,5 @@
 package com.codebytes.partnerportal.user;
 
-import java.security.Principal;
-
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
@@ -13,14 +11,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class PartnerPortalUserApplication
 {
-	@GetMapping("/")
-	public String home () { return "index"; }
-	
-	@GetMapping("/login")
-	public String login (Principal principal) { return principal == null ? "login" : "redirect:/"; }
 
-	@GetMapping("/register")
-	public String register ( Principal principal) { return principal == null ? "registration" : "redirect:/"; }
+	
 
 	@GetMapping("/cart")
 	public String cart () { return "cart"; }
